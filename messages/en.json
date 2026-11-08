@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "title": "Shahmath — Math Olympiad Training Center",
+    "description": "In Baku and online: professional preparation for the IMO, JBMO, RFO, BOM, IZhO and EGMO math olympiads. The first 2 lessons are trial lessons."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "teachers": "Teachers",
+    "pricing": "Pricing",
+    "materials": "Materials",
+    "contact": "Contact",
+    "menu": "Open menu",
+    "close": "Close menu",
+    "theme": "Light / dark theme",
+    "language": "Language"
+  },
+  "cta": {
+    "trial": "Book a trial lesson",
+    "whatsapp": "WhatsApp",
+    "call": "Call",
+    "allTeachers": "All teachers",
+    "allPricing": "Pricing & format",
+    "allMaterials": "Browse materials"
+  },
+  "common": {
+    "soon": "soon",
+    "perMonth": "AZN / month"
+  },
+  "home": {
+    "badge": "Baku · Zaqatala (soon) · Online",
+    "title": "The road to the olympiad starts here",
+    "subtitle": "Structured preparation for the IMO, JBMO, RFO, BOM, IZhO and EGMO: experienced teachers, a monthly mock exam and level-based groups.",
+    "features": [
+      { "title": "2 trial lessons", "text": "Use the first two lessons to get to know the center, the teacher and the pace." },
+      { "title": "Monthly mock exam", "text": "Every month there is an olympiad-style exam (sınaq) to measure progress." },
+      { "title": "Level-based groups", "text": "Based on results, students are split into subgroups so everyone moves at the right pace." }
+    ],
+    "olympiadsTitle": "Olympiads we prepare for",
+    "olympiadsSubtitle": "Past problems, solutions and topic-based materials for every olympiad.",
+    "teachersTitle": "Our teachers",
+    "teachersSubtitle": "A team of teachers with olympiad experience.",
+    "pricingTitle": "Pricing",
+    "pricingSubtitle": "Simple and transparent: one or two lessons per week.",
+    "ctaTitle": "The first two lessons are trial lessons",
+    "ctaText": "Fill in the form — we'll contact you on WhatsApp and pick the right group together."
+  },
+  "about": {
+    "title": "About us",
+    "subtitle": "Shahmath is an education center specializing in preparation for international mathematics olympiads.",
+    "missionTitle": "Our mission",
+    "missionText": "[Text coming soon] To prepare talented students for international olympiads and develop their mathematical thinking and problem-solving skills.",
+    "locationsTitle": "Where we teach",
+    "baku": { "name": "Baku", "text": "Main office. In-person group lessons.", "address": "Address coming soon" },
+    "zaqatala": { "name": "Zaqatala", "text": "A new branch is opening soon. You can register now.", "address": "Address coming soon" },
+    "online": { "name": "Online", "text": "Live online lessons wherever you are.", "address": "Zoom / Google Meet" },
+    "valuesTitle": "Our approach",
+    "values": [
+      { "title": "Structure", "text": "Topics follow the olympiad syllabus: algebra, geometry, combinatorics, number theory." },
+      { "title": "Measurable results", "text": "The monthly mock exam shows every student's progress." },
+      { "title": "Personal attention", "text": "Level-based groups let every student grow at their own pace." }
+    ]
+  },
+  "teachers": {
+    "title": "Teachers",
+    "subtitle": "The team behind our olympiad training."
+  },
+  "topics": {
+    "algebra": "Algebra",
+    "geometry": "Geometry",
+    "combinatorics": "Combinatorics",
+    "number-theory": "Number theory",
+    "olympiad": "Olympiad mathematics"
+  },
+  "pricing": {
+    "title": "Pricing & format",
+    "subtitle": "Choose one or two lessons per week. The first two lessons are trial lessons.",
+    "featured": "Intensive",
+    "plans": {
+      "one": {
+        "name": "1 lesson per week",
+        "desc": "Core preparation pace",
+        "features": ["4 lessons per month", "Monthly mock exam", "Level-based subgroup", "Homework and materials"]
+      },
+      "two": {
+        "name": "2 lessons per week",
+        "desc": "Intensive olympiad preparation",
+        "features": ["8 lessons per month", "Monthly mock exam", "Level-based subgroup", "Homework and materials"]
+      }
+    },
+    "trialTitle": "The first 2 lessons are trial lessons",
+    "trialText": "After signing up, the first two lessons are trial lessons: the student meets the group and the teacher assesses their level.",
+    "howTitle": "How the mock exam and subgroups work",
+    "steps": [
+      { "title": "Trial lessons", "text": "The student's level is assessed during the first two lessons." },
+      { "title": "Monthly mock exam", "text": "Every month there is a mock exam in olympiad format." },
+      { "title": "Subgroups", "text": "Based on results, students are split into level-based subgroups." },
+      { "title": "Next month", "text": "The cycle repeats monthly — a student who improves moves to a stronger group." }
+    ]
+  },
+  "materials": {
+    "title": "Materials",
+    "subtitle": "Past problems, solutions and topics for every olympiad.",
+    "browseTitle": "Problem archive",
+    "search": "Search: problem, year, topic...",
+    "olympiad": "Olympiad",
+    "allOlympiads": "All olympiads",
+    "year": "Year",
+    "allYears": "All years",
+    "topic": "Topic",
+    "allTopics": "All",
+    "found": "Problems found",
+    "empty": "Nothing found. Try different filters.",
+    "problemsPdf": "Problems (PDF)",
+    "solutionsPdf": "Solutions (PDF)",
+    "problem": "Problem",
+    "yearsTitle": "By year",
+    "yearCol": "Year",
+    "topicsTitle": "Topics",
+    "format": "Format",
+    "level": "Who it's for",
+    "back": "All olympiads"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a question? Call us, message us on WhatsApp or book a trial lesson.",
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "whatsappText": "Send a message",
+    "addresses": "Locations",
+    "mapTitle": "On the map",
+    "socialsTitle": "Social media",
+    "form": {
+      "title": "Book a trial lesson",
+      "text": "Fill in the form — WhatsApp will open with a ready message, just send it.",
+      "name": "Full name",
+      "namePh": "e.g. Aysel Mammadova",
+      "phone": "Phone",
+      "phonePh": "+994 __ ___ __ __",
+      "grade": "Grade",
+      "gradePh": "Select",
+      "branch": "Branch",
+      "branches": { "baku": "Baku", "zaqatala": "Zaqatala (soon)", "online": "Online" },
+      "submit": "Send via WhatsApp",
+      "success": "WhatsApp has opened. Send the message — we'll get back to you soon.",
+      "fallback": "If WhatsApp didn't open, click here",
+      "errRequired": "Please fill in all fields.",
+      "errPhone": "Please enter a valid phone number.",
+      "msgGreeting": "Hello! I'd like to book a trial lesson.",
+      "msgName": "Name",
+      "msgPhone": "Phone",
+      "msgGrade": "Grade",
+      "msgBranch": "Branch"
+    }
+  },
+  "social": {
+    "text": "Our social media pages are coming soon."
+  },
+  "footer": {
+    "tagline": "International math olympiad training center. Baku · Zaqatala · Online.",
+    "navTitle": "Pages",
+    "contactTitle": "Contact",
+    "socialsTitle": "Social media",
+    "rights": "All rights reserved."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "back": "Back to home"
+  }
+}

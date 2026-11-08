@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --grid-line: rgba(30, 42, 120, 0.07);
+  color-scheme: light;
+}
+
+.dark {
+  --grid-line: rgba(139, 156, 255, 0.08);
+  color-scheme: dark;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-paper font-sans text-slate-800 antialiased dark:bg-night dark:text-slate-300;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tight text-brand-900 dark:text-white;
+  }
+}
+
+@layer components {
+  .page {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6;
+  }
+
+  /* «Тетрадь в клетку» */
+  .bg-grid {
+    background-image: linear-gradient(var(--grid-line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+
+  .card {
+    @apply rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-white/10 dark:bg-night-card;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-night;
+  }
+  .btn-gold {
+    @apply btn bg-gold-500 text-brand-950 hover:bg-gold-400;
+  }
+  .btn-primary {
+    @apply btn bg-brand-800 text-white hover:bg-brand-700 dark:bg-brand-300 dark:text-night dark:hover:bg-brand-200;
+  }
+  .btn-ghost {
+    @apply btn border border-slate-300 text-brand-900 hover:bg-slate-100 dark:border-white/15 dark:text-white dark:hover:bg-white/5;
+  }
+  .btn-whatsapp {
+    @apply btn bg-[#25D366] text-[#08311b] hover:bg-[#3ee07b];
+  }
+
+  .chip {
+    @apply inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300;
+  }
+
+  .input {
+    @apply w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/30 dark:border-white/15 dark:bg-night dark:text-white dark:placeholder:text-slate-500;
+  }
+  .label {
+    @apply mb-1.5 block text-sm font-medium text-slate-700 dark:text-slate-300;
+  }
+}
+
+.katex {
+  font-size: 1.08em;
+}

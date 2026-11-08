@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "title": "Shahmath — riyaziyyat olimpiadalarına hazırlıq mərkəzi",
+    "description": "Bakıda və onlayn: IMO, JBMO, RFO, BOM, IZhO və EGMO riyaziyyat olimpiadalarına peşəkar hazırlıq. İlk 2 dərs sınaq dərsidir."
+  },
+  "nav": {
+    "home": "Ana səhifə",
+    "about": "Haqqımızda",
+    "teachers": "Müəllimlər",
+    "pricing": "Qiymətlər",
+    "materials": "Materiallar",
+    "contact": "Əlaqə",
+    "menu": "Menyunu aç",
+    "close": "Menyunu bağla",
+    "theme": "Açıq / qaranlıq mövzu",
+    "language": "Dil seçimi"
+  },
+  "cta": {
+    "trial": "Sınaq dərsinə yazıl",
+    "whatsapp": "WhatsApp",
+    "call": "Zəng et",
+    "allTeachers": "Bütün müəllimlər",
+    "allPricing": "Qiymətlər və format",
+    "allMaterials": "Materiallara bax"
+  },
+  "common": {
+    "soon": "tezliklə",
+    "perMonth": "AZN / ay"
+  },
+  "home": {
+    "badge": "Bakı · Zaqatala (tezliklə) · Onlayn",
+    "title": "Olimpiadaya gedən yol buradan başlayır",
+    "subtitle": "IMO, JBMO, RFO, BOM, IZhO və EGMO-ya sistemli hazırlıq: təcrübəli müəllimlər, hər ay sınaq imtahanı və səviyyəyə uyğun qruplar.",
+    "features": [
+      { "title": "2 sınaq dərsi", "text": "İlk iki dərsdə mərkəzi, müəllimi və tədris tempini yoxlayın." },
+      { "title": "Aylıq sınaq imtahanı", "text": "Hər ay olimpiada formatında imtahan keçirilir və irəliləyiş ölçülür." },
+      { "title": "Səviyyəyə görə qruplar", "text": "Nəticələrə əsasən şagirdlər alt qruplara bölünür — hər kəs öz tempində irəliləyir." }
+    ],
+    "olympiadsTitle": "Hazırlaşdığımız olimpiadalar",
+    "olympiadsSubtitle": "Hər olimpiada üçün keçmiş illərin məsələləri, həlləri və mövzular üzrə materiallar.",
+    "teachersTitle": "Müəllimlərimiz",
+    "teachersSubtitle": "Olimpiada təcrübəsi olan müəllimlər komandası.",
+    "pricingTitle": "Qiymətlər",
+    "pricingSubtitle": "Sadə və şəffaf: həftədə bir və ya iki dərs.",
+    "ctaTitle": "İlk iki dərs — sınaq dərsidir",
+    "ctaText": "Formanı doldurun, WhatsApp-da sizinlə əlaqə saxlayaq və uyğun qrupu birlikdə seçək."
+  },
+  "about": {
+    "title": "Haqqımızda",
+    "subtitle": "Shahmath — beynəlxalq riyaziyyat olimpiadalarına hazırlıq üzrə ixtisaslaşmış tədris mərkəzidir.",
+    "missionTitle": "Missiyamız",
+    "missionText": "[Mətn tezliklə] İstedadlı şagirdləri beynəlxalq olimpiadalara hazırlamaq, onlarda riyazi təfəkkürü və çətin məsələləri həll etmə bacarığını inkişaf etdirmək.",
+    "locationsTitle": "Harada dərs keçirik",
+    "baku": { "name": "Bakı", "text": "Əsas ofis. Əyani qrup dərsləri.", "address": "Ünvan tezliklə əlavə olunacaq" },
+    "zaqatala": { "name": "Zaqatala", "text": "Yeni filial tezliklə açılır. İndidən qeydiyyatdan keçə bilərsiniz.", "address": "Ünvan tezliklə əlavə olunacaq" },
+    "online": { "name": "Onlayn", "text": "Harada yaşamağınızdan asılı olmayaraq canlı onlayn dərslər.", "address": "Zoom / Google Meet" },
+    "valuesTitle": "Yanaşmamız",
+    "values": [
+      { "title": "Sistemlilik", "text": "Mövzular olimpiada proqramına uyğun ardıcıllıqla keçilir: cəbr, həndəsə, kombinatorika, ədədlər nəzəriyyəsi." },
+      { "title": "Ölçülə bilən nəticə", "text": "Aylıq sınaq imtahanları hər şagirdin irəliləyişini göstərir." },
+      { "title": "Fərdi diqqət", "text": "Səviyyəyə görə bölgü hər şagirdə öz tempində inkişaf etməyə imkan verir." }
+    ]
+  },
+  "teachers": {
+    "title": "Müəllimlər",
+    "subtitle": "Olimpiada hazırlığını aparan komandamız."
+  },
+  "topics": {
+    "algebra": "Cəbr",
+    "geometry": "Həndəsə",
+    "combinatorics": "Kombinatorika",
+    "number-theory": "Ədədlər nəzəriyyəsi",
+    "olympiad": "Olimpiada riyaziyyatı"
+  },
+  "pricing": {
+    "title": "Qiymətlər və format",
+    "subtitle": "Həftədə bir və ya iki dərs seçin. İlk iki dərs sınaq dərsidir.",
+    "featured": "İntensiv",
+    "plans": {
+      "one": {
+        "name": "Həftədə 1 dərs",
+        "desc": "Əsas hazırlıq tempi",
+        "features": ["Ayda 4 dərs", "Aylıq sınaq imtahanı", "Səviyyəyə görə alt qrup", "Ev tapşırıqları və materiallar"]
+      },
+      "two": {
+        "name": "Həftədə 2 dərs",
+        "desc": "Olimpiadaya intensiv hazırlıq",
+        "features": ["Ayda 8 dərs", "Aylıq sınaq imtahanı", "Səviyyəyə görə alt qrup", "Ev tapşırıqları və materiallar"]
+      }
+    },
+    "trialTitle": "İlk 2 dərs — sınaq",
+    "trialText": "Qeydiyyatdan sonra ilk iki dərs sınaq dərsidir: şagird qrupla tanış olur, müəllim isə onun səviyyəsini qiymətləndirir.",
+    "howTitle": "Sınaq imtahanı və alt qruplar necə işləyir",
+    "steps": [
+      { "title": "Sınaq dərsləri", "text": "İlk iki dərsdə şagirdin səviyyəsi müəyyən edilir." },
+      { "title": "Aylıq sınaq", "text": "Hər ay olimpiada formatında sınaq imtahanı keçirilir." },
+      { "title": "Alt qruplar", "text": "Nəticələrə görə şagirdlər səviyyəyə uyğun alt qruplara bölünür." },
+      { "title": "Növbəti ay", "text": "Proses hər ay təkrarlanır — irəliləyən şagird daha güclü qrupa keçir." }
+    ]
+  },
+  "materials": {
+    "title": "Materiallar",
+    "subtitle": "Olimpiadalar üzrə keçmiş illərin məsələləri, həlləri və mövzular.",
+    "browseTitle": "Məsələ bazası",
+    "search": "Axtarış: məsələ, il, mövzu...",
+    "olympiad": "Olimpiada",
+    "allOlympiads": "Bütün olimpiadalar",
+    "year": "İl",
+    "allYears": "Bütün illər",
+    "topic": "Mövzu",
+    "allTopics": "Hamısı",
+    "found": "Tapılan məsələlər",
+    "empty": "Heç nə tapılmadı. Filtrləri dəyişin.",
+    "problemsPdf": "Məsələlər (PDF)",
+    "solutionsPdf": "Həllər (PDF)",
+    "problem": "Məsələ",
+    "yearsTitle": "İllər üzrə",
+    "yearCol": "İl",
+    "topicsTitle": "Mövzular",
+    "format": "Format",
+    "level": "Kimlər üçün",
+    "back": "Bütün olimpiadalar"
+  },
+  "contact": {
+    "title": "Əlaqə",
+    "subtitle": "Sualınız var? Zəng edin, WhatsApp-a yazın və ya sınaq dərsinə yazılın.",
+    "phone": "Telefon",
+    "whatsapp": "WhatsApp",
+    "whatsappText": "Mesaj yazın",
+    "addresses": "Ünvanlar",
+    "mapTitle": "Xəritədə",
+    "socialsTitle": "Sosial şəbəkələr",
+    "form": {
+      "title": "Sınaq dərsinə yazılış",
+      "text": "Formanı doldurun — WhatsApp-da hazır mesaj açılacaq, sadəcə göndərin.",
+      "name": "Ad və soyad",
+      "namePh": "Məsələn, Aysel Məmmədova",
+      "phone": "Telefon",
+      "phonePh": "+994 __ ___ __ __",
+      "grade": "Sinif",
+      "gradePh": "Seçin",
+      "branch": "Filial",
+      "branches": { "baku": "Bakı", "zaqatala": "Zaqatala (tezliklə)", "online": "Onlayn" },
+      "submit": "WhatsApp ilə göndər",
+      "success": "WhatsApp açıldı. Mesajı göndərin — tezliklə sizinlə əlaqə saxlayacağıq.",
+      "fallback": "WhatsApp açılmadısa, buraya klikləyin",
+      "errRequired": "Zəhmət olmasa, bütün xanaları doldurun.",
+      "errPhone": "Telefon nömrəsini düzgün daxil edin.",
+      "msgGreeting": "Salam! Sınaq dərsinə yazılmaq istəyirəm.",
+      "msgName": "Ad",
+      "msgPhone": "Telefon",
+      "msgGrade": "Sinif",
+      "msgBranch": "Filial"
+    }
+  },
+  "social": {
+    "text": "Sosial şəbəkə səhifələrimiz tezliklə açılacaq."
+  },
+  "footer": {
+    "tagline": "Beynəlxalq riyaziyyat olimpiadalarına hazırlıq mərkəzi. Bakı · Zaqatala · Onlayn.",
+    "navTitle": "Səhifələr",
+    "contactTitle": "Əlaqə",
+    "socialsTitle": "Sosial şəbəkələr",
+    "rights": "Bütün hüquqlar qorunur."
+  },
+  "notFound": {
+    "title": "Səhifə tapılmadı",
+    "back": "Ana səhifəyə qayıt"
+  }
+}

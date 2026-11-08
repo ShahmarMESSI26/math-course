@@ -1,0 +1,46 @@
+[
+  {
+    "slug": "ismet-agazade",
+    "name": "İsmət Agazadə",
+    "subjects": ["olympiad"],
+    "photo": "",
+    "bio": {
+      "az": "Qısa təsvir tezliklə əlavə olunacaq: təhsil, olimpiada təcrübəsi, şagirdlərin nailiyyətləri və tədris yanaşması.",
+      "ru": "Краткое описание появится позже: образование, олимпиадный опыт, достижения учеников и подход к обучению.",
+      "en": "Short bio coming soon: education, olympiad experience, students' achievements and teaching approach."
+    }
+  },
+  {
+    "slug": "semsi-sefer",
+    "name": "Şəmsi Səfər",
+    "subjects": ["algebra"],
+    "photo": "",
+    "bio": {
+      "az": "Cəbr üzrə müəllim. Qısa təsvir tezliklə əlavə olunacaq: təhsil, olimpiada təcrübəsi və tədris yanaşması.",
+      "ru": "Преподаватель алгебры. Краткое описание появится позже: образование, олимпиадный опыт и подход к обучению.",
+      "en": "Algebra teacher. Short bio coming soon: education, olympiad experience and teaching approach."
+    }
+  },
+  {
+    "slug": "sahmar-esedov",
+    "name": "Şahmar Əsədov",
+    "subjects": ["olympiad"],
+    "photo": "",
+    "bio": {
+      "az": "Qısa təsvir tezliklə əlavə olunacaq: təhsil, olimpiada təcrübəsi, şagirdlərin nailiyyətləri və tədris yanaşması.",
+      "ru": "Краткое описание появится позже: образование, олимпиадный опыт, достижения учеников и подход к обучению.",
+      "en": "Short bio coming soon: education, olympiad experience, students' achievements and teaching approach."
+    }
+  },
+  {
+    "slug": "mehemmedeli-bagirzade",
+    "name": "Məhəmmədəli Bağırzadə",
+    "subjects": ["algebra"],
+    "photo": "",
+    "bio": {
+      "az": "Cəbr üzrə müəllim. Qısa təsvir tezliklə əlavə olunacaq: təhsil, olimpiada təcrübəsi və tədris yanaşması.",
+      "ru": "Преподаватель алгебры. Краткое описание появится позже: образование, олимпиадный опыт и подход к обучению.",
+      "en": "Algebra teacher. Short bio coming soon: education, olympiad experience and teaching approach."
+    }
+  }
+]

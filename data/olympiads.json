@@ -1,0 +1,293 @@
+[
+  {
+    "slug": "imo",
+    "name": "IMO",
+    "fullName": {
+      "az": "Beynəlxalq Riyaziyyat Olimpiadası",
+      "ru": "Международная математическая олимпиада",
+      "en": "International Mathematical Olympiad"
+    },
+    "level": {
+      "az": "Liseylilər (20 yaşadək)",
+      "ru": "Старшеклассники (до 20 лет)",
+      "en": "High school students (under 20)"
+    },
+    "format": {
+      "az": "2 gün, hər gün 3 məsələ, 4,5 saat",
+      "ru": "2 дня, по 3 задачи, 4,5 часа в день",
+      "en": "2 days, 3 problems per day, 4.5 hours each"
+    },
+    "description": {
+      "az": "1959-cu ildən keçirilən ən nüfuzlu məktəbli riyaziyyat olimpiadası. Hər ölkədən 6 nəfərədək komanda iştirak edir, hər məsələ 7 balla qiymətləndirilir.",
+      "ru": "Самая престижная школьная олимпиада по математике, проводится с 1959 года. От каждой страны — команда до 6 человек, каждая задача оценивается в 7 баллов.",
+      "en": "The most prestigious school mathematics olympiad, held since 1959. Each country sends a team of up to 6 students; every problem is worth 7 points."
+    },
+    "topics": ["algebra", "geometry", "combinatorics", "number-theory"],
+    "years": [
+      {
+        "year": 2026,
+        "problems": null,
+        "solutions": null,
+        "items": [
+          {
+            "n": 1,
+            "topic": "algebra",
+            "statement": {
+              "az": "[Nümunə] $a, b, c > 0$ və $abc = 1$ olarsa, $a + b + c \\ge 3$ olduğunu isbat edin.",
+              "ru": "[Пример] Докажите, что если $a, b, c > 0$ и $abc = 1$, то $a + b + c \\ge 3$.",
+              "en": "[Example] Prove that if $a, b, c > 0$ and $abc = 1$, then $a + b + c \\ge 3$."
+            }
+          },
+          {
+            "n": 2,
+            "topic": "geometry",
+            "statement": {
+              "az": "[Nümunə] Çevrəyə daxil edilmiş $ABCD$ dördbucaqlısı üçün $AC \\cdot BD = AB \\cdot CD + AD \\cdot BC$ olduğunu isbat edin.",
+              "ru": "[Пример] Докажите, что для вписанного четырёхугольника $ABCD$ выполнено $AC \\cdot BD = AB \\cdot CD + AD \\cdot BC$.",
+              "en": "[Example] Prove that for a cyclic quadrilateral $ABCD$, $AC \\cdot BD = AB \\cdot CD + AD \\cdot BC$."
+            }
+          }
+        ]
+      },
+      { "year": 2025, "problems": null, "solutions": null, "items": [] }
+    ]
+  },
+  {
+    "slug": "jbmo",
+    "name": "JBMO",
+    "fullName": {
+      "az": "Kiçik Balkan Riyaziyyat Olimpiadası",
+      "ru": "Юниорская Балканская математическая олимпиада",
+      "en": "Junior Balkan Mathematical Olympiad"
+    },
+    "level": {
+      "az": "15,5 yaşadək şagirdlər",
+      "ru": "Школьники до 15,5 лет",
+      "en": "Students under 15.5"
+    },
+    "format": {
+      "az": "1 gün, 4 məsələ, 4,5 saat",
+      "ru": "1 день, 4 задачи, 4,5 часа",
+      "en": "1 day, 4 problems, 4.5 hours"
+    },
+    "description": {
+      "az": "Balkan regionu və qonaq ölkələrin gənc şagirdləri üçün olimpiada. IMO-ya gedən yolda ilk ciddi beynəlxalq mərhələ.",
+      "ru": "Олимпиада для младших школьников стран Балканского региона и приглашённых стран. Первый серьёзный международный этап на пути к IMO.",
+      "en": "An olympiad for younger students from the Balkan region and guest countries. The first serious international step on the way to the IMO."
+    },
+    "topics": ["algebra", "geometry", "combinatorics", "number-theory"],
+    "years": [
+      {
+        "year": 2026,
+        "problems": null,
+        "solutions": null,
+        "items": [
+          {
+            "n": 1,
+            "topic": "number-theory",
+            "statement": {
+              "az": "[Nümunə] İstənilən natural $n$ üçün $n^5 - n$ ədədinin $30$-a bölündüyünü isbat edin.",
+              "ru": "[Пример] Докажите, что $n^5 - n$ делится на $30$ при любом натуральном $n$.",
+              "en": "[Example] Prove that $n^5 - n$ is divisible by $30$ for every positive integer $n$."
+            }
+          },
+          {
+            "n": 2,
+            "topic": "combinatorics",
+            "statement": {
+              "az": "[Nümunə] $8 \\times 8$ şahmat taxtasının iki əks künc xanası kəsilib. Qalan hissəni $1 \\times 2$ ölçülü domino daşları ilə tam örtmək mümkündürmü?",
+              "ru": "[Пример] У шахматной доски $8 \\times 8$ вырезали две противоположные угловые клетки. Можно ли покрыть оставшуюся часть доминошками $1 \\times 2$?",
+              "en": "[Example] Two opposite corner squares are removed from an $8 \\times 8$ chessboard. Can the rest be tiled with $1 \\times 2$ dominoes?"
+            }
+          }
+        ]
+      },
+      { "year": 2025, "problems": null, "solutions": null, "items": [] }
+    ]
+  },
+  {
+    "slug": "rfo",
+    "name": "RFO",
+    "fullName": {
+      "az": "Respublika Fənn Olimpiadası",
+      "ru": "Республиканская предметная олимпиада",
+      "en": "Republic Subject Olympiad (Azerbaijan)"
+    },
+    "level": {
+      "az": "Azərbaycan məktəbliləri",
+      "ru": "Школьники Азербайджана",
+      "en": "Schoolchildren of Azerbaijan"
+    },
+    "format": {
+      "az": "Mərhələli: rayon/şəhər mərhələsi → final (dəqiqləşdiriləcək)",
+      "ru": "Поэтапно: районный/городской этап → финал (уточняется)",
+      "en": "Staged: district/city round → final (to be specified)"
+    },
+    "description": {
+      "az": "Azərbaycanda məktəblilər üçün əsas riyaziyyat olimpiadası və beynəlxalq olimpiadalara seçimin mühüm mərhələsi.",
+      "ru": "Главная математическая олимпиада для школьников Азербайджана и важный этап отбора на международные олимпиады.",
+      "en": "The main mathematics olympiad for schoolchildren in Azerbaijan and an important selection stage for international olympiads."
+    },
+    "topics": ["algebra", "geometry", "combinatorics", "number-theory"],
+    "years": [
+      {
+        "year": 2026,
+        "problems": null,
+        "solutions": null,
+        "items": [
+          {
+            "n": 1,
+            "topic": "algebra",
+            "statement": {
+              "az": "[Nümunə] Bütün həqiqi $x, y$ üçün $x^2 + y^2 + 1 \\ge xy + x + y$ olduğunu isbat edin.",
+              "ru": "[Пример] Докажите, что $x^2 + y^2 + 1 \\ge xy + x + y$ для всех действительных $x, y$.",
+              "en": "[Example] Prove that $x^2 + y^2 + 1 \\ge xy + x + y$ for all real $x, y$."
+            }
+          },
+          {
+            "n": 2,
+            "topic": "geometry",
+            "statement": {
+              "az": "[Nümunə] $ABC$ üçbucağında $AD$ bucaq tənböləndir ($D \\in BC$). $\\dfrac{BD}{DC} = \\dfrac{AB}{AC}$ olduğunu isbat edin.",
+              "ru": "[Пример] В треугольнике $ABC$ проведена биссектриса $AD$ ($D \\in BC$). Докажите, что $\\dfrac{BD}{DC} = \\dfrac{AB}{AC}$.",
+              "en": "[Example] In triangle $ABC$, $AD$ is the angle bisector ($D \\in BC$). Prove that $\\dfrac{BD}{DC} = \\dfrac{AB}{AC}$."
+            }
+          }
+        ]
+      },
+      { "year": 2025, "problems": null, "solutions": null, "items": [] }
+    ]
+  },
+  {
+    "slug": "bom",
+    "name": "BOM",
+    "fullName": {
+      "az": "Balkan Riyaziyyat Olimpiadası",
+      "ru": "Балканская математическая олимпиада",
+      "en": "Balkan Mathematical Olympiad"
+    },
+    "level": {
+      "az": "Liseylilər",
+      "ru": "Старшеклассники",
+      "en": "High school students"
+    },
+    "format": {
+      "az": "1 gün, 4 məsələ, 4,5 saat",
+      "ru": "1 день, 4 задачи, 4,5 часа",
+      "en": "1 day, 4 problems, 4.5 hours"
+    },
+    "description": {
+      "az": "1984-cü ildən keçirilən regional olimpiada. Güclü rəqabətə görə IMO-ya ən yaxşı hazırlıqlardan biri sayılır.",
+      "ru": "Региональная олимпиада, проводится с 1984 года. Благодаря сильной конкуренции считается одной из лучших ступеней подготовки к IMO.",
+      "en": "A regional olympiad held since 1984. Thanks to strong competition it is one of the best preparation steps for the IMO."
+    },
+    "topics": ["algebra", "geometry", "combinatorics", "number-theory"],
+    "years": [
+      {
+        "year": 2026,
+        "problems": null,
+        "solutions": null,
+        "items": [
+          {
+            "n": 1,
+            "topic": "number-theory",
+            "statement": {
+              "az": "[Nümunə] $p > 3$ sadə ədəddirsə, $p^2 - 1$ ədədinin $24$-ə bölündüyünü isbat edin.",
+              "ru": "[Пример] Докажите, что если $p > 3$ — простое число, то $p^2 - 1$ делится на $24$.",
+              "en": "[Example] Prove that if $p > 3$ is prime, then $p^2 - 1$ is divisible by $24$."
+            }
+          }
+        ]
+      },
+      { "year": 2025, "problems": null, "solutions": null, "items": [] }
+    ]
+  },
+  {
+    "slug": "izho",
+    "name": "IZhO",
+    "fullName": {
+      "az": "Beynəlxalq Jautıkov Olimpiadası",
+      "ru": "Международная Жаутыковская олимпиада",
+      "en": "International Zhautykov Olympiad"
+    },
+    "level": {
+      "az": "Liseylilər",
+      "ru": "Старшеклассники",
+      "en": "High school students"
+    },
+    "format": {
+      "az": "2 tur, 6 məsələ",
+      "ru": "2 тура, 6 задач",
+      "en": "2 rounds, 6 problems"
+    },
+    "description": {
+      "az": "Qazaxıstanda (Almatı) keçirilən riyaziyyat, fizika və informatika olimpiadası. Riyaziyyat məsələləri IMO səviyyəsinə yaxındır.",
+      "ru": "Олимпиада по математике, физике и информатике в Казахстане (Алматы). Задачи по математике близки к уровню IMO.",
+      "en": "An olympiad in mathematics, physics and computer science held in Almaty, Kazakhstan. Its mathematics problems are close to IMO level."
+    },
+    "topics": ["algebra", "geometry", "combinatorics", "number-theory"],
+    "years": [
+      {
+        "year": 2026,
+        "problems": null,
+        "solutions": null,
+        "items": [
+          {
+            "n": 1,
+            "topic": "combinatorics",
+            "statement": {
+              "az": "[Nümunə] $1, 2, \\ldots, 2n$ ədədlərindən istənilən $n + 1$ ədəd seçilib. Onlardan birinin digərinə bölündüyünü isbat edin.",
+              "ru": "[Пример] Из чисел $1, 2, \\ldots, 2n$ выбрали произвольные $n + 1$. Докажите, что одно из них делится на другое.",
+              "en": "[Example] Any $n + 1$ numbers are chosen from $1, 2, \\ldots, 2n$. Prove that one of them divides another."
+            }
+          }
+        ]
+      },
+      { "year": 2025, "problems": null, "solutions": null, "items": [] }
+    ]
+  },
+  {
+    "slug": "egmo",
+    "name": "EGMO",
+    "fullName": {
+      "az": "Avropa Qızlar Riyaziyyat Olimpiadası",
+      "ru": "Европейская математическая олимпиада для девушек",
+      "en": "European Girls' Mathematical Olympiad"
+    },
+    "level": {
+      "az": "Qız şagirdlər (liseylilər)",
+      "ru": "Школьницы (старшие классы)",
+      "en": "Girls (high school)"
+    },
+    "format": {
+      "az": "2 gün, hər gün 3 məsələ, 4,5 saat",
+      "ru": "2 дня, по 3 задачи, 4,5 часа в день",
+      "en": "2 days, 3 problems per day, 4.5 hours each"
+    },
+    "description": {
+      "az": "2012-ci ildən keçirilir. Komandalar 4 qızdan ibarətdir, format IMO ilə eynidir.",
+      "ru": "Проводится с 2012 года. Команды состоят из 4 девушек, формат как на IMO.",
+      "en": "Held since 2012. Teams consist of 4 girls; the format mirrors the IMO."
+    },
+    "topics": ["algebra", "geometry", "combinatorics", "number-theory"],
+    "years": [
+      {
+        "year": 2026,
+        "problems": null,
+        "solutions": null,
+        "items": [
+          {
+            "n": 1,
+            "topic": "algebra",
+            "statement": {
+              "az": "[Nümunə] $a, b > 0$ və $a + b = 1$ olarsa, $\\dfrac{1}{a} + \\dfrac{1}{b} \\ge 4$ olduğunu isbat edin.",
+              "ru": "[Пример] Докажите, что если $a, b > 0$ и $a + b = 1$, то $\\dfrac{1}{a} + \\dfrac{1}{b} \\ge 4$.",
+              "en": "[Example] Prove that if $a, b > 0$ and $a + b = 1$, then $\\dfrac{1}{a} + \\dfrac{1}{b} \\ge 4$."
+            }
+          }
+        ]
+      },
+      { "year": 2025, "problems": null, "solutions": null, "items": [] }
+    ]
+  }
+]
