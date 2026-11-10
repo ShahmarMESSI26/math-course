@@ -32,6 +32,8 @@ export async function generateMetadata({ params }: Omit<Props, 'children'>): Pro
     title: { default: d.meta.title, template: '%s | Shahmath' },
     description: d.meta.description,
     icons: { icon: '/favicon.svg' },
+    // Google Search Console → <meta name="google-site-verification" ...>
+    verification: { google: 'RZRjsKiKAac7fqOkV86v4PRAwBOAYKg_HEuLYjOmO70' },
   };
 }
 
