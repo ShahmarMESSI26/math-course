@@ -7,7 +7,7 @@ export function JsonLd({ lang }: { lang: Locale }) {
     '@context': 'https://schema.org',
     '@type': 'EducationalOrganization',
     name: 'Shahmath',
-    url: `${SITE_URL}/${lang}`,
+    url: `${SITE_URL}/${lang}/`,
     logo: `${SITE_URL}/favicon.svg`,
     telephone: '+994506166262',
     address: { '@type': 'PostalAddress', addressLocality: 'Baku', addressCountry: 'AZ' },

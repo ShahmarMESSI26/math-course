@@ -31,7 +31,7 @@ export default async function PricingPage({ params }: Props) {
             <span className="font-display text-4xl font-extrabold text-gold-600 dark:text-gold-400">2×</span>
             <h2 className="mt-2 text-xl font-bold">{p.trialTitle}</h2>
             <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">{p.trialText}</p>
-            <Link href={`/${lang}/contact#trial`} className="btn-gold mt-6 w-full">
+            <Link href={`/${lang}/contact/#trial`} className="btn-gold mt-6 w-full">
               {d.cta.trial}
             </Link>
           </aside>

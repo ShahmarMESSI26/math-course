@@ -1,4 +1,16 @@
-export const SITE_URL = 'https://shahmath.az';
+/**
+ * Адрес сайта для sitemap, canonical, hreflang и robots.
+ * 1. NEXT_PUBLIC_SITE_URL — если задан вручную (например, после покупки домена).
+ * 2. VERCEL_PROJECT_PRODUCTION_URL — Vercel подставляет сам (xxx.vercel.app или свой домен).
+ * 3. localhost — при локальной разработке.
+ * Используется только на сервере / при сборке.
+ */
+export const SITE_URL = (
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : 'http://localhost:3000')
+).replace(/\/+$/, '');
 
 export const PHONE_DISPLAY = '+994 50 616 62 62';
 export const PHONE_TEL = 'tel:+994506166262';

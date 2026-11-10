@@ -17,15 +17,17 @@ export function Header({ lang, d }: { lang: Locale; d: Dict }) {
 
   useEffect(() => setOpen(false), [pathname]);
 
+  // Сравниваем без завершающего слэша, чтобы /az и /az/ считались одной страницей
+  const current = pathname.replace(/\/+$/, '');
   const isActive = (href: string) =>
-    href === '' ? pathname === `/${lang}` : pathname.startsWith(`/${lang}${href}`);
+    href === '' ? current === `/${lang}` : current.startsWith(`/${lang}${href}`);
 
   const links = NAV.map((item) => {
     const active = isActive(item.href);
     return (
       <Link
         key={item.key}
-        href={`/${lang}${item.href}`}
+        href={`/${lang}${item.href}/`}
         aria-current={active ? 'page' : undefined}
         className={`rounded-full px-3 py-2 text-sm font-medium transition ${
           active
@@ -48,7 +50,7 @@ export function Header({ lang, d }: { lang: Locale; d: Dict }) {
         <div className="flex items-center gap-1.5">
           <LangSwitch lang={lang} label={d.nav.language} />
           <ThemeToggle label={d.nav.theme} />
-          <Link href={`/${lang}/contact#trial`} className="btn-gold ml-1 hidden xl:inline-flex">
+          <Link href={`/${lang}/contact/#trial`} className="btn-gold ml-1 hidden xl:inline-flex">
             {d.cta.trial}
           </Link>
           <button
@@ -68,7 +70,7 @@ export function Header({ lang, d }: { lang: Locale; d: Dict }) {
         <div id="mobile-menu" className="border-t border-slate-200 lg:hidden dark:border-white/10">
           <nav className="page flex flex-col gap-1 py-3">
             {links}
-            <Link href={`/${lang}/contact#trial`} className="btn-gold mt-2">
+            <Link href={`/${lang}/contact/#trial`} className="btn-gold mt-2">
               {d.cta.trial}
             </Link>
           </nav>

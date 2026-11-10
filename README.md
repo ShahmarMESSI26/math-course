@@ -57,14 +57,17 @@ npm run dev
 ### Vercel (рекомендуется)
 1. Загрузите проект на GitHub.
 2. https://vercel.com → **Add New → Project** → выберите репозиторий → **Deploy** (настройки определятся сами).
-3. **Settings → Domains** → добавьте `shahmath.az` и `www.shahmath.az`.
-   У регистратора домена пропишите DNS-записи, которые покажет Vercel
-   (обычно `A @ → 76.76.21.21` и `CNAME www → cname.vercel-dns.com`).
+3. Сайт получит бесплатный адрес вида `https://<проект>.vercel.app`.
+   В **Settings → Environment Variables** задайте `NEXT_PUBLIC_SITE_URL` = этот адрес
+   (используется в sitemap, canonical и robots) и сделайте Redeploy.
+4. Если позже появится свой домен: **Settings → Domains** → добавьте его, пропишите DNS-записи,
+   которые покажет Vercel, и поменяйте `NEXT_PUBLIC_SITE_URL`.
 
 ### Netlify
 1. Загрузите проект на GitHub.
 2. https://app.netlify.com → **Add new site → Import an existing project** → репозиторий.
    Netlify сам распознает Next.js (build command `npm run build`).
-3. **Domain management** → добавьте `shahmath.az` и пропишите DNS по инструкции Netlify.
+3. **Site configuration → Environment variables** → задайте `NEXT_PUBLIC_SITE_URL`
+   (адрес вида `https://<сайт>.netlify.app`). Свой домен — в **Domain management**.
 
 После каждого `git push` сайт обновляется автоматически.

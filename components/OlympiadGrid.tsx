@@ -9,7 +9,7 @@ export function OlympiadGrid({ lang }: { lang: Locale }) {
       {olympiads.map((o) => (
         <Link
           key={o.slug}
-          href={`/${lang}/materials/${o.slug}`}
+          href={`/${lang}/materials/${o.slug}/`}
           className="card group p-6 transition hover:-translate-y-0.5 hover:border-gold-500 hover:shadow-md dark:hover:border-gold-500"
         >
           <div className="flex items-start justify-between">

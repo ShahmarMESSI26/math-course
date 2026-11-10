@@ -11,7 +11,7 @@ export function CtaBanner({ lang, d }: { lang: Locale; d: Dict }) {
         <h2 className="text-3xl font-bold !text-white sm:text-4xl">{d.home.ctaTitle}</h2>
         <p className="mx-auto mt-3 max-w-xl text-brand-100">{d.home.ctaText}</p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <Link href={`/${lang}/contact#trial`} className="btn-gold">
+          <Link href={`/${lang}/contact/#trial`} className="btn-gold">
             {d.cta.trial}
           </Link>
           <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="btn-whatsapp">

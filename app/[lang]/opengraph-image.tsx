@@ -29,7 +29,7 @@ export default function OpengraphImage() {
           <span>Shah</span>
           <span style={{ color: '#F2B33D' }}>math</span>
         </div>
-        <div style={{ display: 'flex', fontSize: 36, marginTop: 16, color: '#DCE0F7' }}>Math Olympiad Training · shahmath.az</div>
+        <div style={{ display: 'flex', fontSize: 36, marginTop: 16, color: '#DCE0F7' }}>Math Olympiad Training</div>
         <div style={{ display: 'flex', gap: 16, marginTop: 48 }}>
           {OLYMPIADS.map((o) => (
             <div

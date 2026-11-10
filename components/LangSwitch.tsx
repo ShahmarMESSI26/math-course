@@ -5,9 +5,9 @@ import { usePathname } from 'next/navigation';
 import { locales, type Locale } from '@/lib/locales';
 
 export function LangSwitch({ lang, label }: { lang: Locale; label: string }) {
-  const pathname = usePathname() || `/${lang}`;
+  const pathname = usePathname() || `/${lang}/`;
   // Оставляем текущую страницу, меняем только язык
-  const rest = pathname.replace(/^\/(az|ru|en)(?=\/|$)/, '');
+  const rest = pathname.replace(/^\/(az|ru|en)(?=\/|$)/, '').replace(/\/+$/, '') + '/';
 
   return (
     <nav aria-label={label} className="flex rounded-full border border-slate-300 p-0.5 text-xs font-semibold dark:border-white/15">

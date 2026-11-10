@@ -44,7 +44,7 @@ export default async function HomePage({ params }: Props) {
             <h1 className="mt-5 text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">{d.home.title}</h1>
             <p className="mt-5 max-w-xl text-lg text-slate-600 dark:text-slate-400">{d.home.subtitle}</p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link href={`/${lang}/contact#trial`} className="btn-gold">
+              <Link href={`/${lang}/contact/#trial`} className="btn-gold">
                 {d.cta.trial}
               </Link>
               <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="btn-ghost">
@@ -55,7 +55,7 @@ export default async function HomePage({ params }: Props) {
               {olympiads.map((o) => (
                 <Link
                   key={o.slug}
-                  href={`/${lang}/materials/${o.slug}`}
+                  href={`/${lang}/materials/${o.slug}/`}
                   className="rounded-lg border border-slate-300 bg-white/70 px-3 py-1.5 font-display text-sm font-bold text-brand-800 transition hover:border-gold-500 dark:border-white/15 dark:bg-white/5 dark:text-brand-200"
                 >
                   {o.name}
@@ -80,7 +80,7 @@ export default async function HomePage({ params }: Props) {
 
       <Section title={d.home.olympiadsTitle} subtitle={d.home.olympiadsSubtitle} className="pt-4">
         <OlympiadGrid lang={lang} />
-        <MoreLink href={`/${lang}/materials`}>{d.cta.allMaterials}</MoreLink>
+        <MoreLink href={`/${lang}/materials/`}>{d.cta.allMaterials}</MoreLink>
       </Section>
 
       <Section
@@ -93,12 +93,12 @@ export default async function HomePage({ params }: Props) {
             <TeacherCard key={teacher.slug} teacher={teacher} lang={lang} d={d} compact />
           ))}
         </div>
-        <MoreLink href={`/${lang}/teachers`}>{d.cta.allTeachers}</MoreLink>
+        <MoreLink href={`/${lang}/teachers/`}>{d.cta.allTeachers}</MoreLink>
       </Section>
 
       <Section title={d.home.pricingTitle} subtitle={d.home.pricingSubtitle}>
         <PricingCards lang={lang} d={d} />
-        <MoreLink href={`/${lang}/pricing`}>{d.cta.allPricing}</MoreLink>
+        <MoreLink href={`/${lang}/pricing/`}>{d.cta.allPricing}</MoreLink>
       </Section>
 
       <CtaBanner lang={lang} d={d} />

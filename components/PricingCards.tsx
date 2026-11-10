@@ -30,7 +30,7 @@ export function PricingCards({ lang, d }: { lang: Locale; d: Dict }) {
                 </li>
               ))}
             </ul>
-            <Link href={`/${lang}/contact#trial`} className={`${p.featured ? 'btn-gold' : 'btn-primary'} mt-8 w-full`}>
+            <Link href={`/${lang}/contact/#trial`} className={`${p.featured ? 'btn-gold' : 'btn-primary'} mt-8 w-full`}>
               {d.cta.trial}
             </Link>
           </div>

@@ -23,7 +23,7 @@ export function LogoMark({ className = 'h-8 w-8' }: { className?: string }) {
 export function Logo({ lang }: { lang: Locale }) {
   return (
     <Link
-      href={`/${lang}`}
+      href={`/${lang}/`}
       className="flex shrink-0 items-center gap-2 font-display text-lg font-extrabold text-brand-900 dark:text-white"
     >
       <LogoMark />

@@ -23,7 +23,7 @@ export function Footer({ lang, d }: { lang: Locale; d: Dict }) {
           <ul className="mt-3 space-y-2 text-sm">
             {NAV.map((item) => (
               <li key={item.key}>
-                <Link href={`/${lang}${item.href}`} className={linkCls}>
+                <Link href={`/${lang}${item.href}/`} className={linkCls}>
                   {d.nav[item.key]}
                 </Link>
               </li>
@@ -66,11 +66,8 @@ export function Footer({ lang, d }: { lang: Locale; d: Dict }) {
       </div>
 
       <div className="border-t border-slate-200 dark:border-white/10">
-        <div className="page flex flex-col gap-1 py-5 text-xs text-slate-500 sm:flex-row sm:justify-between">
-          <span>
-            © {year} Shahmath. {d.footer.rights}
-          </span>
-          <span>shahmath.az</span>
+        <div className="page py-5 text-xs text-slate-500">
+          © {year} Shahmath. {d.footer.rights}
         </div>
       </div>
     </footer>

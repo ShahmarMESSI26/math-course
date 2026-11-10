@@ -36,7 +36,7 @@ export default async function OlympiadPage({ params }: Props) {
   return (
     <>
       <PageHeader title={o.name} subtitle={t(o.fullName, lang)}>
-        <Link href={`/${lang}/materials`} className="mb-4 inline-block text-sm font-medium text-brand-700 hover:underline dark:text-brand-300">
+        <Link href={`/${lang}/materials/`} className="mb-4 inline-block text-sm font-medium text-brand-700 hover:underline dark:text-brand-300">
           ← {m.back}
         </Link>
       </PageHeader>
@@ -116,7 +116,7 @@ export default async function OlympiadPage({ params }: Props) {
           <div className="card sticky top-24 p-6">
             <h2 className="text-xl font-bold">{d.home.ctaTitle}</h2>
             <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">{d.home.ctaText}</p>
-            <Link href={`/${lang}/contact#trial`} className="btn-gold mt-6 w-full">
+            <Link href={`/${lang}/contact/#trial`} className="btn-gold mt-6 w-full">
               {d.cta.trial}
             </Link>
           </div>
