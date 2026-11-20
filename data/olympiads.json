@@ -26,7 +26,7 @@
     "years": [
       {
         "year": 2026,
-        "problems": null,
+        "problems": "/materials/imo/2026/problems.pdf",
         "solutions": null,
         "items": [
           {
@@ -49,7 +49,7 @@
           }
         ]
       },
-      { "year": 2025, "problems": null, "solutions": null, "items": [] }
+      { "year": 2025, "problems": "/materials/imo/2025/problems.pdf", "solutions": null, "items": [] }
     ]
   },
   {
@@ -79,7 +79,7 @@
     "years": [
       {
         "year": 2026,
-        "problems": null,
+        "problems": "/materials/jbmo/2026/problems.pdf",
         "solutions": null,
         "items": [
           {
@@ -102,7 +102,7 @@
           }
         ]
       },
-      { "year": 2025, "problems": null, "solutions": null, "items": [] }
+      { "year": 2025, "problems": "/materials/jbmo/2025/problems.pdf", "solutions": null, "items": [] }
     ]
   },
   {
