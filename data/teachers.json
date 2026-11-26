@@ -1,46 +1,50 @@
 [
   {
-    "slug": "ismet-agazade",
-    "name": "İsmət Agazadə",
-    "subjects": ["olympiad"],
-    "photo": "",
-    "bio": {
-      "az": "Qısa təsvir tezliklə əlavə olunacaq: təhsil, olimpiada təcrübəsi, şagirdlərin nailiyyətləri və tədris yanaşması.",
-      "ru": "Краткое описание появится позже: образование, олимпиадный опыт, достижения учеников и подход к обучению.",
-      "en": "Short bio coming soon: education, olympiad experience, students' achievements and teaching approach."
-    }
-  },
-  {
-    "slug": "semsi-sefer",
-    "name": "Şəmsi Səfər",
-    "subjects": ["algebra"],
-    "photo": "",
-    "bio": {
-      "az": "Cəbr üzrə müəllim. Qısa təsvir tezliklə əlavə olunacaq: təhsil, olimpiada təcrübəsi və tədris yanaşması.",
-      "ru": "Преподаватель алгебры. Краткое описание появится позже: образование, олимпиадный опыт и подход к обучению.",
-      "en": "Algebra teacher. Short bio coming soon: education, olympiad experience and teaching approach."
-    }
-  },
-  {
     "slug": "sahmar-esedov",
-    "name": "Şahmar Əsədov",
+    "name": { "az": "Şahmar Əsədov", "ru": "Шахмар Асадов", "en": "Shahmar Asadov" },
+    "role": { "az": "Təsisçi", "ru": "Основатель", "en": "Founder" },
     "subjects": ["olympiad"],
     "photo": "",
     "bio": {
-      "az": "Qısa təsvir tezliklə əlavə olunacaq: təhsil, olimpiada təcrübəsi, şagirdlərin nailiyyətləri və tədris yanaşması.",
-      "ru": "Краткое описание появится позже: образование, олимпиадный опыт, достижения учеников и подход к обучению.",
-      "en": "Short bio coming soon: education, olympiad experience, students' achievements and teaching approach."
+      "az": "Shahmath-ın təsisçisi. 16 olimpiada medalının sahibidir, o cümlədən FISO Global Round-da Diamond One kuboku (dünyada 1-ci yer), AMO, SASMO, Kenquru və TIMO-nun qızıl medalları.",
+      "ru": "Основатель Shahmath. Обладатель 16 олимпиадных медалей, в том числе трофея Diamond One на FISO Global Round (1-е место в мире) и золотых медалей AMO, SASMO, «Кенгуру» и TIMO.",
+      "en": "Founder of Shahmath. Winner of 16 olympiad medals, including the Diamond One trophy at the FISO Global Round (1st place worldwide) and gold medals at AMO, SASMO, Kangaroo and TIMO."
     }
   },
   {
     "slug": "mehemmedeli-bagirzade",
-    "name": "Məhəmmədəli Bağırzadə",
+    "name": { "az": "Məhəmmədəli Bağırzadə", "ru": "Мухаммед Али Багирзаде", "en": "Mahammadali Baghirzade" },
+    "role": { "az": "Müəllim", "ru": "Преподаватель", "en": "Teacher" },
     "subjects": ["algebra"],
     "photo": "",
     "bio": {
-      "az": "Cəbr üzrə müəllim. Qısa təsvir tezliklə əlavə olunacaq: təhsil, olimpiada təcrübəsi və tədris yanaşması.",
-      "ru": "Преподаватель алгебры. Краткое описание появится позже: образование, олимпиадный опыт и подход к обучению.",
-      "en": "Algebra teacher. Short bio coming soon: education, olympiad experience and teaching approach."
+      "az": "Copernicus olimpiadasında 100 bal (maksimal nəticə). Respublika Fənn Müsabiqələrində qızıl (7-ci sinif) və gümüş (6-cı sinif) medallar, AMO, SASMO, Kenquru və TIMO-nun qızıl medalları.",
+      "ru": "100 баллов на олимпиаде Copernicus (максимальный результат). Золото (7 класс) и серебро (6 класс) Республиканских предметных конкурсов, золотые медали AMO, SASMO, «Кенгуру» и TIMO.",
+      "en": "A perfect 100 at the Copernicus Olympiad. Gold (grade 7) and silver (grade 6) at the Republican Subject Contests, plus gold medals at AMO, SASMO, Kangaroo and TIMO."
+    }
+  },
+  {
+    "slug": "semsi-sefer",
+    "name": { "az": "Şəmsi Səfərov", "ru": "Шямси Сафаров", "en": "Shamsi Safarov" },
+    "role": { "az": "Olimpiada məşqçisi", "ru": "Олимпиадный тренер", "en": "Olympiad coach" },
+    "subjects": ["algebra", "olympiad"],
+    "photo": "",
+    "bio": {
+      "az": "Fizika, Riyaziyyat və İnformatika Təmayüllü Respublika Liseyinin (FRİTL) və ARTİ-nin beynəlxalq olimpiadalara hazırlıq mərkəzinin aparıcı olimpiada məşqçisi. Respublika Fənn Olimpiadası, IMO, BMO, JBMO, IZhO və EGMO mükafatçılarını hazırlayıb.",
+      "ru": "Ведущий олимпиадный тренер Республиканского физико-математического лицея (FRİTL) и центра подготовки к международным олимпиадам ARTİ. Подготовил призёров Республиканской предметной олимпиады, IMO, BMO, JBMO, IZhO и EGMO.",
+      "en": "Lead olympiad coach at the Republican Lyceum of Physics, Mathematics and Informatics (FRİTL) and at ARTİ's international olympiad training centre. He has trained medallists of the Republic Subject Olympiad, IMO, BMO, JBMO, IZhO and EGMO."
+    }
+  },
+  {
+    "slug": "ismet-agazade",
+    "name": { "az": "İsmət Ağazadə", "ru": "Исмет Агазаде", "en": "Ismet Aghazade" },
+    "role": { "az": "Olimpiada məşqçisi", "ru": "Олимпиадный тренер", "en": "Olympiad coach" },
+    "subjects": ["olympiad"],
+    "photo": "",
+    "bio": {
+      "az": "Respublika Fənn Olimpiadasının qızıl medalçısı və «Birincilər birincisi», Balkan Riyaziyyat Olimpiadasının (BMO) bürünc medalçısı, IMO-da fəxri fərman sahibi, Prezident təqaüdçüsü. Respublika və beynəlxalq olimpiadaların mükafatçılarını hazırlayıb.",
+      "ru": "Золотой медалист Республиканской предметной олимпиады и обладатель титула «Первый среди первых», бронзовый призёр Балканской математической олимпиады (BMO), обладатель почётного отзыва IMO, президентский стипендиат. Подготовил призёров республиканских и международных олимпиад.",
+      "en": "Gold medallist of the Republic Subject Olympiad and winner of the “First among Firsts” title, bronze medallist at the Balkan Mathematical Olympiad (BMO), IMO Honourable Mention, Presidential Scholar. He has trained medallists of national and international olympiads."
     }
   }
 ]

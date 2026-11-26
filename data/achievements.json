@@ -1,90 +1,174 @@
 {
-  "_help": "Одна запись = одна олимпиада. results: medal (trophy | gold | silver | bronze | honorable | diploma | finalist), count — количество, note — пояснение (необязательно). level: international | national | rating. Итоговые цифры над списком (медали, золото, олимпиады) считаются автоматически. Запись с \"draft\": true видна только при npm run dev.",
-  "competitions": [
-    {
+  "_help": "competitions — справочник олимпиад (название один раз на 3 языках). team — участники команды: teacher = slug из data/teachers.json (оттуда берутся имя и роль), results — награды (competition = ключ из справочника; medal: trophy | gold | silver | bronze | honorable | perfect | finalist | diploma; count — количество; note — пояснение), highlights — текстовые пункты. Итоговые цифры над блоком считаются автоматически. \"draft\": true — запись видна только при npm run dev.",
+  "competitions": {
+    "fiso": {
       "name": { "az": "FISO", "ru": "FISO", "en": "FISO" },
       "fullName": {
         "az": "Future Intelligence Students Olympiad · Global Round",
         "ru": "Future Intelligence Students Olympiad · Global Round",
         "en": "Future Intelligence Students Olympiad · Global Round"
       },
-      "level": "international",
-      "highlight": true,
-      "results": [
-        {
-          "medal": "trophy",
-          "count": 1,
-          "note": { "az": "Diamond One kuboku — dünyada 1-ci yer", "ru": "Трофей Diamond One — 1-е место в мире", "en": "Diamond One trophy — 1st place worldwide" }
-        },
-        { "medal": "gold", "count": 2 }
-      ]
+      "level": "international"
     },
-    {
+    "amo": {
       "name": { "az": "AMO", "ru": "AMO", "en": "AMO" },
       "fullName": { "az": "American Mathematics Olympiad", "ru": "American Mathematics Olympiad", "en": "American Mathematics Olympiad" },
-      "level": "international",
-      "results": [{ "medal": "gold", "count": 4 }]
+      "level": "international"
     },
-    {
+    "sasmo": {
       "name": { "az": "SASMO", "ru": "SASMO", "en": "SASMO" },
       "fullName": {
         "az": "Singapore and Asian Schools Math Olympiad",
         "ru": "Singapore and Asian Schools Math Olympiad",
         "en": "Singapore and Asian Schools Math Olympiad"
       },
-      "level": "international",
-      "results": [{ "medal": "gold", "count": 2 }]
+      "level": "international"
     },
-    {
+    "kangaroo": {
       "name": { "az": "Kenquru", "ru": "Кенгуру", "en": "Kangaroo" },
       "fullName": {
         "az": "Beynəlxalq «Kenquru» riyaziyyat müsabiqəsi",
         "ru": "Международный математический конкурс «Кенгуру»",
         "en": "Kangaroo Math Competition"
       },
-      "level": "international",
-      "results": [{ "medal": "gold", "count": 2 }]
+      "level": "international"
     },
-    {
+    "timo": {
       "name": { "az": "TIMO", "ru": "TIMO", "en": "TIMO" },
       "fullName": {
         "az": "Thailand International Mathematical Olympiad",
         "ru": "Thailand International Mathematical Olympiad",
         "en": "Thailand International Mathematical Olympiad"
       },
-      "level": "international",
-      "results": [
-        { "medal": "gold", "count": 1 },
-        { "medal": "silver", "count": 2 }
-      ]
+      "level": "international"
     },
-    {
+    "copernicus": {
       "name": { "az": "Copernicus", "ru": "Copernicus", "en": "Copernicus" },
       "fullName": { "az": "Copernicus Olympiad", "ru": "Олимпиада Copernicus", "en": "Copernicus Olympiad" },
-      "level": "international",
-      "results": [{ "medal": "silver", "count": 1 }]
+      "level": "international"
     },
-    {
+    "lutfi-zade": {
       "name": { "az": "Lütfi Zadə olimpiadası", "ru": "Олимпиада им. Лютфи Заде", "en": "Lotfi Zadeh Olympiad" },
       "fullName": {
         "az": "Lütfi Zadə adına olimpiada (Azərbaycan)",
         "ru": "Олимпиада имени Лютфи Заде (Азербайджан)",
         "en": "Lotfi Zadeh Olympiad (Azerbaijan)"
       },
-      "level": "national",
-      "results": [{ "medal": "silver", "count": 1 }]
+      "level": "national"
     },
-    {
+    "rfm": {
       "name": { "az": "RFM", "ru": "РФМ", "en": "RFM" },
       "fullName": {
         "az": "Respublika Fənn Müsabiqələri (RFM)",
         "ru": "Республиканские предметные конкурсы (РФМ)",
         "en": "Republican Subject Contests (RFM)"
       },
-      "level": "national",
+      "level": "national"
+    },
+    "rfo": {
+      "name": { "az": "RFO", "ru": "RFO", "en": "RFO" },
+      "fullName": {
+        "az": "Respublika Fənn Olimpiadası",
+        "ru": "Республиканская предметная олимпиада",
+        "en": "Republic Subject Olympiad (Azerbaijan)"
+      },
+      "level": "national"
+    },
+    "bmo": {
+      "name": { "az": "BMO", "ru": "BMO", "en": "BMO" },
+      "fullName": {
+        "az": "Balkan Riyaziyyat Olimpiadası",
+        "ru": "Балканская математическая олимпиада",
+        "en": "Balkan Mathematical Olympiad"
+      },
+      "level": "international"
+    },
+    "imo": {
+      "name": { "az": "IMO", "ru": "IMO", "en": "IMO" },
+      "fullName": {
+        "az": "Beynəlxalq Riyaziyyat Olimpiadası",
+        "ru": "Международная математическая олимпиада",
+        "en": "International Mathematical Olympiad"
+      },
+      "level": "international"
+    }
+  },
+  "team": [
+    {
+      "teacher": "sahmar-esedov",
       "results": [
-        { "medal": "bronze", "count": 1, "note": { "az": "7-ci sinif", "ru": "7 класс", "en": "Grade 7" } },
-        { "medal": "finalist", "count": 1, "note": { "az": "6-cı sinif", "ru": "6 класс", "en": "Grade 6" } }
+        {
+          "competition": "fiso",
+          "medal": "trophy",
+          "count": 1,
+          "note": { "az": "Diamond One kuboku — dünyada 1-ci yer", "ru": "Трофей Diamond One — 1-е место в мире", "en": "Diamond One trophy — 1st place worldwide" }
+        },
+        { "competition": "fiso", "medal": "gold", "count": 2 },
+        { "competition": "amo", "medal": "gold", "count": 4 },
+        { "competition": "sasmo", "medal": "gold", "count": 2 },
+        { "competition": "kangaroo", "medal": "gold", "count": 2 },
+        { "competition": "timo", "medal": "gold", "count": 1 },
+        { "competition": "timo", "medal": "silver", "count": 2 },
+        { "competition": "copernicus", "medal": "silver", "count": 1 },
+        { "competition": "lutfi-zade", "medal": "silver", "count": 1 },
+        { "competition": "rfm", "medal": "bronze", "count": 1, "note": { "az": "7-ci sinif", "ru": "7 класс", "en": "Grade 7" } },
+        { "competition": "rfm", "medal": "finalist", "count": 1, "note": { "az": "6-cı sinif", "ru": "6 класс", "en": "Grade 6" } }
+      ],
+      "highlights": []
+    },
+    {
+      "teacher": "mehemmedeli-bagirzade",
+      "results": [
+        {
+          "competition": "copernicus",
+          "medal": "perfect",
+          "count": 1,
+          "note": { "az": "100 bal — maksimal nəticə", "ru": "100 баллов — максимальный результат", "en": "100 points — the maximum score" }
+        },
+        { "competition": "rfm", "medal": "gold", "count": 1, "note": { "az": "7-ci sinif", "ru": "7 класс", "en": "Grade 7" } },
+        { "competition": "rfm", "medal": "silver", "count": 1, "note": { "az": "6-cı sinif", "ru": "6 класс", "en": "Grade 6" } },
+        { "competition": "amo", "medal": "gold", "count": 2 },
+        { "competition": "sasmo", "medal": "gold", "count": 2 },
+        { "competition": "kangaroo", "medal": "gold", "count": 1 },
+        { "competition": "timo", "medal": "gold", "count": 1 }
+      ],
+      "highlights": []
+    },
+    {
+      "teacher": "semsi-sefer",
+      "results": [],
+      "highlights": [
+        {
+          "az": "Fizika, Riyaziyyat və İnformatika Təmayüllü Respublika Liseyinin (FRİTL) və ARTİ-nin beynəlxalq olimpiadalara hazırlıq mərkəzinin aparıcı olimpiada məşqçisi.",
+          "ru": "Ведущий олимпиадный тренер Республиканского физико-математического лицея (FRİTL) и центра подготовки к международным олимпиадам ARTİ.",
+          "en": "Lead olympiad coach at the Republican Lyceum of Physics, Mathematics and Informatics (FRİTL) and at ARTİ's international olympiad training centre."
+        },
+        {
+          "az": "Respublika Fənn Olimpiadasının (RFO) və beynəlxalq yarışların — IMO, BMO, JBMO, IZhO, EGMO — mükafatçılarının müəllimi.",
+          "ru": "Наставник призёров Республиканской предметной олимпиады (RFO) и международных соревнований — IMO, BMO, JBMO, IZhO, EGMO.",
+          "en": "Mentor of medallists at the Republic Subject Olympiad (RFO) and at international competitions — IMO, BMO, JBMO, IZhO, EGMO."
+        }
+      ]
+    },
+    {
+      "teacher": "ismet-agazade",
+      "results": [
+        {
+          "competition": "rfo",
+          "medal": "gold",
+          "count": 1,
+          "note": { "az": "«Birincilər birincisi» adı", "ru": "Титул «Первый среди первых» (Birincilər birincisi)", "en": "“First among Firsts” title (Birincilər birincisi)" }
+        },
+        { "competition": "bmo", "medal": "bronze", "count": 1 },
+        { "competition": "imo", "medal": "honorable", "count": 1 }
+      ],
+      "highlights": [
+        { "az": "Prezident təqaüdçüsü.", "ru": "Президентский стипендиат.", "en": "Presidential Scholar." },
+        {
+          "az": "Respublika və beynəlxalq riyaziyyat olimpiadalarının mükafatçılarını hazırlayan məşqçi.",
+          "ru": "Тренер, подготовивший призёров республиканских и международных олимпиад по математике.",
+          "en": "Coach who has trained medallists of national and international mathematics olympiads."
+        }
       ]
     }
   ],

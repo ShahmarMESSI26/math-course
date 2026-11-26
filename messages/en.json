@@ -244,24 +244,26 @@
     "teaserText": "A free 5-problem test shows whether a student fits a foundation or an olympiad group. The result appears on screen right away."
   },
   "achievements": {
-    "title": "Our achievements",
-    "subtitle": "Results of our students at international and national olympiads.",
+    "title": "Our team and achievements",
+    "subtitle": "Results of our teachers and coaches at international and national olympiads.",
+    "memberMedals": "{n} medals",
     "awardsTitle": "Medals and awards",
     "casesTitle": "Student growth stories",
     "before": "Before",
     "after": "After",
     "grade": "Grade",
-    "statMedals": "medals",
+    "statMedals": "olympiad medals",
     "statGold": "gold medals",
     "statOlympiads": "olympiads",
     "statWorld": "worldwide at FISO",
     "medals": {
       "trophy": "Trophy",
+      "perfect": "Perfect score",
       "finalist": "Finalist",
       "gold": "Gold medal",
       "silver": "Silver medal",
       "bronze": "Bronze medal",
-      "honorable": "Honourable mention",
+      "honorable": "Honourable Mention",
       "diploma": "Diploma"
     },
     "levels": {

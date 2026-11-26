@@ -14,7 +14,8 @@ export function TeacherCard({
   d: Dict;
   compact?: boolean;
 }) {
-  const initials = teacher.name
+  const name = t(teacher.name, lang);
+  const initials = name
     .split(' ')
     .map((w) => w[0])
     .join('');
@@ -25,7 +26,7 @@ export function TeacherCard({
         {teacher.photo ? (
           <Image
             src={teacher.photo}
-            alt={teacher.name}
+            alt={name}
             fill
             sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
             className="object-cover"
@@ -38,7 +39,8 @@ export function TeacherCard({
         )}
       </div>
       <div className="flex flex-1 flex-col p-5">
-        <h3 className="text-lg font-bold">{teacher.name}</h3>
+        <h3 className="text-lg font-bold">{name}</h3>
+        <p className="mt-0.5 text-sm font-medium text-gold-700 dark:text-gold-400">{t(teacher.role, lang)}</p>
         <div className="mt-2 flex flex-wrap gap-1.5">
           {teacher.subjects.map((s) => (
             <span key={s} className="chip">

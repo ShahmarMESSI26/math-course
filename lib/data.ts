@@ -34,7 +34,8 @@ export type Olympiad = {
 
 export type Teacher = {
   slug: string;
-  name: string;
+  name: L10n;
+  role: L10n;
   subjects: (Topic | 'olympiad')[];
   photo: string; // пусто = заглушка с инициалами
   bio: L10n;
@@ -47,44 +48,66 @@ export function getOlympiad(slug: string): Olympiad | undefined {
   return olympiads.find((o) => o.slug === slug);
 }
 
-/* ---------- Достижения (data/achievements.json) ---------- */
+/* ---------- Команда и достижения (data/achievements.json + data/teachers.json) ---------- */
 
-export type Medal = 'trophy' | 'gold' | 'silver' | 'bronze' | 'honorable' | 'diploma' | 'finalist';
+export type Medal = 'trophy' | 'gold' | 'silver' | 'bronze' | 'honorable' | 'perfect' | 'finalist' | 'diploma';
 export type AwardLevel = 'international' | 'national' | 'rating';
 
 type Draftable = { draft?: boolean };
-export type AwardResult = { medal: Medal; count: number; note?: L10n };
-export type Competition = Draftable & {
-  name: L10n;
-  fullName: L10n;
-  level: AwardLevel;
-  highlight?: boolean; // выделить карточку (главное достижение)
-  results: AwardResult[];
-};
+export type CompetitionInfo = { name: L10n; fullName: L10n; level: AwardLevel };
+export type AwardResult = { competition: string; medal: Medal; count: number; note?: L10n };
+type RawMember = Draftable & { teacher: string; results: AwardResult[]; highlights: L10n[] };
 export type GrowthCase = Draftable & { student: string; grade: string; before: L10n; after: L10n };
+
+/** Награды одного человека на одной олимпиаде — для вывода одной строкой. */
+export type CompetitionGroup = { id: string; info: CompetitionInfo; results: AwardResult[] };
+export type TeamMember = {
+  teacher: Teacher;
+  groups: CompetitionGroup[];
+  highlights: L10n[];
+  medals: number; // золото + серебро + бронза
+};
 
 /** Записи с "draft": true показываются только при локальной разработке. */
 const showDrafts = process.env.NODE_ENV !== 'production';
 const published = <T extends Draftable>(items: T[]) => items.filter((i) => showDrafts || !i.draft);
 
-const rawAchievements = achievementsJson as unknown as { competitions: Competition[]; cases: GrowthCase[] };
+const rawAchievements = achievementsJson as unknown as {
+  competitions: Record<string, CompetitionInfo>;
+  team: RawMember[];
+  cases: GrowthCase[];
+};
+const competitionInfo = rawAchievements.competitions;
 
-const competitions = published(rawAchievements.competitions);
-const countOf = (...medals: Medal[]) =>
-  competitions.reduce(
-    (sum, c) => sum + c.results.filter((r) => medals.includes(r.medal)).reduce((s, r) => s + r.count, 0),
-    0,
-  );
+const MEDALS: Medal[] = ['gold', 'silver', 'bronze'];
+const sum = (results: AwardResult[], medals: Medal[]) =>
+  results.filter((r) => medals.includes(r.medal)).reduce((s, r) => s + r.count, 0);
+
+const team: TeamMember[] = published(rawAchievements.team).map((m) => {
+  const teacher = teachers.find((t) => t.slug === m.teacher);
+  if (!teacher) throw new Error(`achievements.json: преподаватель «${m.teacher}» не найден в teachers.json`);
+  const groups: CompetitionGroup[] = [];
+  for (const r of m.results) {
+    const info = competitionInfo[r.competition];
+    if (!info) throw new Error(`achievements.json: олимпиада «${r.competition}» не описана в competitions`);
+    const group = groups.find((g) => g.id === r.competition);
+    if (group) group.results.push(r);
+    else groups.push({ id: r.competition, info, results: [r] });
+  }
+  return { teacher, groups, highlights: m.highlights ?? [], medals: sum(m.results, MEDALS) };
+});
+
+const allResults = team.flatMap((m) => m.groups.flatMap((g) => g.results));
 
 export const achievements = {
-  competitions,
+  team,
   cases: published(rawAchievements.cases),
-  /** Итоги считаются автоматически из списка олимпиад */
+  /** Итоги по всей команде — считаются автоматически */
   totals: {
-    medals: countOf('gold', 'silver', 'bronze'),
-    gold: countOf('gold'),
-    trophies: countOf('trophy'),
-    olympiads: competitions.length,
+    medals: sum(allResults, MEDALS),
+    gold: sum(allResults, ['gold']),
+    trophies: sum(allResults, ['trophy']),
+    olympiads: new Set(allResults.map((r) => r.competition)).size,
   },
 };
 
