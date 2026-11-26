@@ -1,0 +1,71 @@
+{
+  "timeLimitSec": 600,
+  "olympiadThreshold": 6,
+  "questions": [
+    {
+      "id": "overtake",
+      "topic": "logic",
+      "points": 1,
+      "statement": {
+        "az": "Qaçış yarışında ikinci yerdə qaçan iştirakçını ötdünüz. İndi neçənci yerdəsiniz?",
+        "ru": "В забеге вы обогнали бегуна, который бежал вторым. Каким вы теперь бежите?",
+        "en": "In a race, you overtake the runner in second place. What place are you in now?"
+      },
+      "options": [
+        { "az": "Birinci", "ru": "Первым", "en": "First" },
+        { "az": "İkinci", "ru": "Вторым", "en": "Second" },
+        { "az": "Üçüncü", "ru": "Третьим", "en": "Third" },
+        { "az": "Müəyyən etmək olmaz", "ru": "Невозможно определить", "en": "Impossible to tell" }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sequence",
+      "topic": "logic",
+      "points": 1,
+      "statement": {
+        "az": "Ardıcıllığı davam etdirin: $2,\\ 6,\\ 12,\\ 20,\\ 30,\\ \\ldots$ Növbəti ədəd hansıdır?",
+        "ru": "Продолжите последовательность: $2,\\ 6,\\ 12,\\ 20,\\ 30,\\ \\ldots$ Какое число следующее?",
+        "en": "Continue the sequence: $2,\\ 6,\\ 12,\\ 20,\\ 30,\\ \\ldots$ What number comes next?"
+      },
+      "options": ["36", "40", "42", "44"],
+      "answer": 2
+    },
+    {
+      "id": "rectangle",
+      "topic": "geometry",
+      "points": 2,
+      "statement": {
+        "az": "Düzbucaqlının perimetri $30$ sm-dir, uzunluğu isə enindən $2$ dəfə böyükdür. Düzbucaqlının sahəsi neçə sm²-dir?",
+        "ru": "Периметр прямоугольника равен $30$ см, а длина в $2$ раза больше ширины. Чему равна площадь прямоугольника (в см²)?",
+        "en": "A rectangle has a perimeter of $30$ cm, and its length is twice its width. What is its area in cm²?"
+      },
+      "options": ["45", "50", "56", "60"],
+      "answer": 1
+    },
+    {
+      "id": "last-digit",
+      "topic": "number-theory",
+      "points": 2,
+      "statement": {
+        "az": "$7^{2026}$ ədədinin son rəqəmi hansıdır?",
+        "ru": "Какой цифрой оканчивается число $7^{2026}$?",
+        "en": "What is the last digit of $7^{2026}$?"
+      },
+      "options": ["1", "3", "7", "9"],
+      "answer": 3
+    },
+    {
+      "id": "remainder",
+      "topic": "number-theory",
+      "points": 3,
+      "statement": {
+        "az": "$2,\\ 3,\\ 4,\\ 5$ və $6$-ya bölündükdə hər dəfə $1$ qalıq verən, $1$-dən böyük ən kiçik natural ədədi tapın.",
+        "ru": "Найдите наименьшее натуральное число, большее $1$, которое при делении на $2,\\ 3,\\ 4,\\ 5$ и $6$ каждый раз даёт остаток $1$.",
+        "en": "Find the smallest natural number greater than $1$ that leaves a remainder of $1$ when divided by each of $2,\\ 3,\\ 4,\\ 5$ and $6$."
+      },
+      "options": ["31", "59", "61", "121"],
+      "answer": 2
+    }
+  ]
+}

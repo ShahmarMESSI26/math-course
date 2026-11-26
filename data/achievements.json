@@ -1,0 +1,92 @@
+{
+  "_help": "Одна запись = одна олимпиада. results: medal (trophy | gold | silver | bronze | honorable | diploma | finalist), count — количество, note — пояснение (необязательно). level: international | national | rating. Итоговые цифры над списком (медали, золото, олимпиады) считаются автоматически. Запись с \"draft\": true видна только при npm run dev.",
+  "competitions": [
+    {
+      "name": { "az": "FISO", "ru": "FISO", "en": "FISO" },
+      "fullName": {
+        "az": "Future Intelligence Students Olympiad · Global Round",
+        "ru": "Future Intelligence Students Olympiad · Global Round",
+        "en": "Future Intelligence Students Olympiad · Global Round"
+      },
+      "level": "international",
+      "highlight": true,
+      "results": [
+        {
+          "medal": "trophy",
+          "count": 1,
+          "note": { "az": "Diamond One kuboku — dünyada 1-ci yer", "ru": "Трофей Diamond One — 1-е место в мире", "en": "Diamond One trophy — 1st place worldwide" }
+        },
+        { "medal": "gold", "count": 2 }
+      ]
+    },
+    {
+      "name": { "az": "AMO", "ru": "AMO", "en": "AMO" },
+      "fullName": { "az": "American Mathematics Olympiad", "ru": "American Mathematics Olympiad", "en": "American Mathematics Olympiad" },
+      "level": "international",
+      "results": [{ "medal": "gold", "count": 4 }]
+    },
+    {
+      "name": { "az": "SASMO", "ru": "SASMO", "en": "SASMO" },
+      "fullName": {
+        "az": "Singapore and Asian Schools Math Olympiad",
+        "ru": "Singapore and Asian Schools Math Olympiad",
+        "en": "Singapore and Asian Schools Math Olympiad"
+      },
+      "level": "international",
+      "results": [{ "medal": "gold", "count": 2 }]
+    },
+    {
+      "name": { "az": "Kenquru", "ru": "Кенгуру", "en": "Kangaroo" },
+      "fullName": {
+        "az": "Beynəlxalq «Kenquru» riyaziyyat müsabiqəsi",
+        "ru": "Международный математический конкурс «Кенгуру»",
+        "en": "Kangaroo Math Competition"
+      },
+      "level": "international",
+      "results": [{ "medal": "gold", "count": 2 }]
+    },
+    {
+      "name": { "az": "TIMO", "ru": "TIMO", "en": "TIMO" },
+      "fullName": {
+        "az": "Thailand International Mathematical Olympiad",
+        "ru": "Thailand International Mathematical Olympiad",
+        "en": "Thailand International Mathematical Olympiad"
+      },
+      "level": "international",
+      "results": [
+        { "medal": "gold", "count": 1 },
+        { "medal": "silver", "count": 2 }
+      ]
+    },
+    {
+      "name": { "az": "Copernicus", "ru": "Copernicus", "en": "Copernicus" },
+      "fullName": { "az": "Copernicus Olympiad", "ru": "Олимпиада Copernicus", "en": "Copernicus Olympiad" },
+      "level": "international",
+      "results": [{ "medal": "silver", "count": 1 }]
+    },
+    {
+      "name": { "az": "Lütfi Zadə olimpiadası", "ru": "Олимпиада им. Лютфи Заде", "en": "Lotfi Zadeh Olympiad" },
+      "fullName": {
+        "az": "Lütfi Zadə adına olimpiada (Azərbaycan)",
+        "ru": "Олимпиада имени Лютфи Заде (Азербайджан)",
+        "en": "Lotfi Zadeh Olympiad (Azerbaijan)"
+      },
+      "level": "national",
+      "results": [{ "medal": "silver", "count": 1 }]
+    },
+    {
+      "name": { "az": "RFM", "ru": "РФМ", "en": "RFM" },
+      "fullName": {
+        "az": "Respublika Fənn Müsabiqələri (RFM)",
+        "ru": "Республиканские предметные конкурсы (РФМ)",
+        "en": "Republican Subject Contests (RFM)"
+      },
+      "level": "national",
+      "results": [
+        { "medal": "bronze", "count": 1, "note": { "az": "7-ci sinif", "ru": "7 класс", "en": "Grade 7" } },
+        { "medal": "finalist", "count": 1, "note": { "az": "6-cı sinif", "ru": "6 класс", "en": "Grade 6" } }
+      ]
+    }
+  ],
+  "cases": []
+}

@@ -4,6 +4,7 @@ import { asLocale } from '@/lib/locales';
 import { pageMetadata } from '@/lib/seo';
 import { PageHeader, Section } from '@/components/Section';
 import { CtaBanner } from '@/components/CtaBanner';
+import { Achievements } from '@/components/Achievements';
 import { GlobeIcon, MapPinIcon } from '@/components/icons';
 
 type Props = { params: Promise<{ lang: string }> };
@@ -55,6 +56,8 @@ export default async function AboutPage({ params }: Props) {
           ))}
         </div>
       </Section>
+
+      <Achievements lang={lang} d={d} />
 
       <Section title={a.valuesTitle}>
         <div className="grid gap-6 md:grid-cols-3">

@@ -1,0 +1,149 @@
+[
+  {
+    "slug": "imo-1959-p1-irreducible-fraction",
+    "source": "IMO 1959, P1",
+    "olympiad": "imo",
+    "year": 1959,
+    "topic": "number-theory",
+    "difficulty": 1,
+    "date": "2026-11-26",
+    "title": {
+      "az": "IMO 1959, 1-ci məsələ: kəsr niyə həmişə ixtisarolunmazdır?",
+      "ru": "IMO 1959, задача 1: почему дробь всегда несократима?",
+      "en": "IMO 1959, Problem 1: why is the fraction always irreducible?"
+    },
+    "summary": {
+      "az": "Tarixdəki ilk IMO-nun ilk məsələsi: $\\frac{21n+4}{14n+3}$ kəsrinin istənilən natural $n$ üçün ixtisarolunmaz olduğunu Evklid alqoritmi ilə sübut edirik.",
+      "ru": "Первая задача первой в истории IMO: доказываем, что дробь $\\frac{21n+4}{14n+3}$ несократима при любом натуральном $n$, с помощью алгоритма Евклида.",
+      "en": "The very first problem of the very first IMO: we prove that $\\frac{21n+4}{14n+3}$ is irreducible for every natural $n$ using the Euclidean algorithm."
+    },
+    "statement": {
+      "az": "İstənilən natural $n$ üçün $$\\frac{21n+4}{14n+3}$$ kəsrinin ixtisarolunmaz olduğunu sübut edin.",
+      "ru": "Докажите, что при любом натуральном $n$ дробь $$\\frac{21n+4}{14n+3}$$ несократима.",
+      "en": "Prove that the fraction $$\\frac{21n+4}{14n+3}$$ is irreducible for every natural number $n$."
+    },
+    "solution": {
+      "az": [
+        "Kəsrin ixtisarolunmaz olması o deməkdir ki, surət və məxrəcin ən böyük ortaq böləni $1$-dir. Tutaq ki, $d = \\gcd(21n+4,\\ 14n+3)$.",
+        "$d$ hər iki ədədi bölürsə, onların istənilən tam əmsallı xətti kombinasiyasını da bölür. $n$-i yox etmək üçün belə kombinasiya seçək: $$3(14n+3) - 2(21n+4) = 42n + 9 - 42n - 8 = 1.$$",
+        "Deməli, $d \\mid 1$, yəni $d = 1$. Surət və məxrəcin $1$-dən başqa ortaq böləni yoxdur, buna görə kəsr ixtisarolunmazdır.",
+        "Eyni nəticəni Evklid alqoritmi də verir: $21n+4 = 1\\cdot(14n+3) + (7n+1)$ və $14n+3 = 2\\cdot(7n+1) + 1$. Son sıfırdan fərqli qalıq $1$-dir.",
+        "Əsas fikir: iki ifadənin ƏBOB-unu tapmaq üçün onların elə kombinasiyasını axtarın ki, dəyişən yox olsun. Bu üsul olimpiadalarda tez-tez işə yarayır."
+      ],
+      "ru": [
+        "Дробь несократима, если наибольший общий делитель числителя и знаменателя равен $1$. Пусть $d = \\gcd(21n+4,\\ 14n+3)$.",
+        "Если $d$ делит оба числа, то он делит и любую их линейную комбинацию с целыми коэффициентами. Подберём такую, в которой $n$ сокращается: $$3(14n+3) - 2(21n+4) = 42n + 9 - 42n - 8 = 1.$$",
+        "Значит, $d \\mid 1$, то есть $d = 1$. У числителя и знаменателя нет общих делителей, кроме $1$, поэтому дробь несократима.",
+        "Тот же вывод даёт алгоритм Евклида: $21n+4 = 1\\cdot(14n+3) + (7n+1)$ и $14n+3 = 2\\cdot(7n+1) + 1$. Последний ненулевой остаток равен $1$.",
+        "Главная идея: чтобы найти НОД двух выражений, ищите их комбинацию, в которой переменная исчезает. Этот приём постоянно встречается на олимпиадах."
+      ],
+      "en": [
+        "A fraction is irreducible when the greatest common divisor of its numerator and denominator is $1$. Let $d = \\gcd(21n+4,\\ 14n+3)$.",
+        "If $d$ divides both numbers, it divides every integer linear combination of them. Choose one in which $n$ cancels: $$3(14n+3) - 2(21n+4) = 42n + 9 - 42n - 8 = 1.$$",
+        "Hence $d \\mid 1$, so $d = 1$. The numerator and denominator share no divisor other than $1$, so the fraction is irreducible.",
+        "The Euclidean algorithm gives the same result: $21n+4 = 1\\cdot(14n+3) + (7n+1)$ and $14n+3 = 2\\cdot(7n+1) + 1$. The last non-zero remainder is $1$.",
+        "Key idea: to find the gcd of two expressions, look for a combination in which the variable disappears. This trick appears in olympiads all the time."
+      ]
+    }
+  },
+  {
+    "slug": "pigeonhole-five-points-in-a-square",
+    "source": "",
+    "olympiad": null,
+    "year": null,
+    "topic": "combinatorics",
+    "difficulty": 1,
+    "date": "2026-11-25",
+    "title": {
+      "az": "Dirixle prinsipi: kvadratda 5 nöqtə",
+      "ru": "Принцип Дирихле: 5 точек в квадрате",
+      "en": "The pigeonhole principle: 5 points in a square"
+    },
+    "summary": {
+      "az": "Tərəfi $2$ olan kvadratın içində istənilən $5$ nöqtədən ikisinin arasındakı məsafənin $\\sqrt{2}$-dən çox olmadığını sübut edirik. Kombinatorikanın ən vacib fikirlərindən biri.",
+      "ru": "Доказываем, что среди любых $5$ точек в квадрате со стороной $2$ найдутся две на расстоянии не больше $\\sqrt{2}$. Одна из главных идей комбинаторики.",
+      "en": "We prove that among any $5$ points in a square of side $2$, two are at distance at most $\\sqrt{2}$. One of the most important ideas in combinatorics."
+    },
+    "statement": {
+      "az": "Tərəfi $2$ olan kvadratın daxilində (və ya sərhədində) $5$ nöqtə götürülüb. Sübut edin ki, onlardan elə ikisi var ki, aralarındakı məsafə $\\sqrt{2}$-dən böyük deyil.",
+      "ru": "Внутри квадрата со стороной $2$ (или на его границе) отмечено $5$ точек. Докажите, что среди них найдутся две, расстояние между которыми не больше $\\sqrt{2}$.",
+      "en": "Five points are placed inside (or on the boundary of) a square of side $2$. Prove that two of them are at distance at most $\\sqrt{2}$."
+    },
+    "solution": {
+      "az": [
+        "Kvadratı orta xətlərlə tərəfi $1$ olan $4$ kiçik kvadrata bölək. Bunlar «qutular», $5$ nöqtə isə «dovşanlar» olacaq.",
+        "Dirixle prinsipi: $5$ dovşanı $4$ qutuya yerləşdirsək, hansısa qutuda ən azı $2$ dovşan olacaq. Deməli, kiçik kvadratlardan biri ən azı iki nöqtəni ehtiva edir (sərhəddəki nöqtəni istənilən qonşu kvadrata aid edə bilərik).",
+        "Tərəfi $1$ olan kvadratın içindəki iki nöqtə arasındakı ən böyük məsafə onun diaqonalına bərabərdir: $$\\sqrt{1^2 + 1^2} = \\sqrt{2}.$$",
+        "Beləliklə, həmin iki nöqtə arasındakı məsafə $\\sqrt{2}$-dən böyük deyil. Sübut tamamlandı.",
+        "Əsas fikir: «qutuları» düzgün seçmək. Qutu nə qədər kiçik olsa, onun içindəki iki nöqtə haqqında bir o qədər güclü nəticə alırıq."
+      ],
+      "ru": [
+        "Разобьём квадрат средними линиями на $4$ квадратика со стороной $1$. Это будут «клетки», а $5$ точек — «кролики».",
+        "Принцип Дирихле: если $5$ кроликов сидят в $4$ клетках, то в какой-то клетке не меньше $2$ кроликов. Значит, один из квадратиков содержит хотя бы две точки (точку на границе относим к любому из соседних квадратиков).",
+        "Наибольшее расстояние между двумя точками квадрата со стороной $1$ равно его диагонали: $$\\sqrt{1^2 + 1^2} = \\sqrt{2}.$$",
+        "Следовательно, расстояние между этими двумя точками не больше $\\sqrt{2}$, что и требовалось доказать.",
+        "Главная идея: правильно выбрать «клетки». Чем меньше клетка, тем сильнее вывод о двух точках внутри неё."
+      ],
+      "en": [
+        "Cut the square along its midlines into $4$ small squares of side $1$. These are the «boxes», and the $5$ points are the «pigeons».",
+        "Pigeonhole principle: if $5$ pigeons sit in $4$ boxes, some box holds at least $2$ pigeons. So one of the small squares contains at least two points (a point on a shared edge can be assigned to either neighbouring square).",
+        "The largest distance between two points of a square of side $1$ is its diagonal: $$\\sqrt{1^2 + 1^2} = \\sqrt{2}.$$",
+        "Therefore those two points are at distance at most $\\sqrt{2}$, as required.",
+        "Key idea: choose the «boxes» well. The smaller the box, the stronger the conclusion about two points inside it."
+      ]
+    }
+  },
+  {
+    "slug": "imo-1988-p6-vieta-jumping",
+    "source": "IMO 1988, P6",
+    "olympiad": "imo",
+    "year": 1988,
+    "topic": "number-theory",
+    "difficulty": 3,
+    "date": "2026-11-24",
+    "title": {
+      "az": "IMO 1988, 6-cı məsələ: Vieta sıçrayışı",
+      "ru": "IMO 1988, задача 6: «прыжки Виета»",
+      "en": "IMO 1988, Problem 6: Vieta jumping"
+    },
+    "summary": {
+      "az": "IMO tarixinin ən məşhur məsələlərindən biri. $ab+1 \\mid a^2+b^2$ olduqda nisbətin tam kvadrat olduğunu «Vieta sıçrayışı» üsulu ilə sübut edirik.",
+      "ru": "Одна из самых знаменитых задач в истории IMO. Доказываем методом «прыжков Виета», что если $ab+1 \\mid a^2+b^2$, то частное — точный квадрат.",
+      "en": "One of the most famous problems in IMO history. Using «Vieta jumping», we prove that if $ab+1 \\mid a^2+b^2$, the quotient is a perfect square."
+    },
+    "statement": {
+      "az": "$a$ və $b$ natural ədədlərdir və $ab+1$ ədədi $a^2+b^2$-ni bölür. Sübut edin ki, $$\\frac{a^2+b^2}{ab+1}$$ tam kvadratdır.",
+      "ru": "Натуральные числа $a$ и $b$ таковы, что $ab+1$ делит $a^2+b^2$. Докажите, что $$\\frac{a^2+b^2}{ab+1}$$ является точным квадратом.",
+      "en": "Let $a$ and $b$ be positive integers such that $ab+1$ divides $a^2+b^2$. Prove that $$\\frac{a^2+b^2}{ab+1}$$ is a perfect square."
+    },
+    "solution": {
+      "az": [
+        "$k = \\frac{a^2+b^2}{ab+1}$ işarə edək; $k$ natural ədəddir. Əksini fərz edək: $k$ tam kvadrat deyil.",
+        "$a^2 + b^2 = k(ab+1)$ bərabərliyini ödəyən bütün natural $(a, b)$ cütləri arasından $a + b$ cəmi ən kiçik olanı seçək. Ümumiliyi pozmadan $a \\ge b$.",
+        "Bərabərliyi $a$-ya nəzərən kvadrat tənlik kimi yazaq: $$x^2 - kb\\,x + (b^2 - k) = 0.$$ $x = a$ onun köküdür. Viyet teoreminə görə ikinci kök $$a' = kb - a = \\frac{b^2 - k}{a}.$$ Birinci ifadədən görünür ki, $a'$ tam ədəddir, və $(a', b)$ cütü də $a'^2 + b^2 = k(a'b + 1)$ bərabərliyini ödəyir.",
+        "Əgər $a' < 0$ olsaydı, onda $a'b + 1 \\le 0$ olardı və sağ tərəf $k(a'b+1) \\le 0$, sol tərəf isə $a'^2 + b^2 > 0$ — ziddiyyət. Əgər $a' = 0$ olsaydı, $b^2 = k$ alınardı, yəni $k$ tam kvadrat olardı — fərziyyəyə ziddir. Deməli, $a'$ natural ədəddir.",
+        "Digər tərəfdən $$a' = \\frac{b^2 - k}{a} < \\frac{b^2}{a} \\le \\frac{a^2}{a} = a.$$ Onda $(a', b)$ eyni $k$ ilə daha kiçik $a' + b < a + b$ cəmi olan cütdür. Bu, $a + b$-nin minimal seçilməsinə ziddir.",
+        "Ziddiyyət göstərir ki, fərziyyəmiz yanlışdır: $k$ tam kvadratdır.",
+        "Əsas fikir («Vieta sıçrayışı»): minimal həlli götürün, Viyet teoremi ilə ondan daha kiçik həll düzəldin və ziddiyyət alın. Bu üsul indi olimpiadaların klassik alətidir."
+      ],
+      "ru": [
+        "Обозначим $k = \\frac{a^2+b^2}{ab+1}$; $k$ — натуральное число. Предположим противное: $k$ не является точным квадратом.",
+        "Среди всех пар натуральных чисел $(a, b)$, для которых $a^2 + b^2 = k(ab+1)$, выберем пару с наименьшей суммой $a + b$. Без ограничения общности $a \\ge b$.",
+        "Запишем равенство как квадратное уравнение относительно $a$: $$x^2 - kb\\,x + (b^2 - k) = 0.$$ Число $x = a$ — его корень. По теореме Виета второй корень $$a' = kb - a = \\frac{b^2 - k}{a}.$$ Из первого выражения видно, что $a'$ — целое, и пара $(a', b)$ тоже удовлетворяет равенству $a'^2 + b^2 = k(a'b + 1)$.",
+        "Если $a' < 0$, то $a'b + 1 \\le 0$, и правая часть $k(a'b+1) \\le 0$, тогда как левая $a'^2 + b^2 > 0$ — противоречие. Если $a' = 0$, то $b^2 = k$, то есть $k$ — точный квадрат, что противоречит предположению. Значит, $a'$ — натуральное число.",
+        "С другой стороны, $$a' = \\frac{b^2 - k}{a} < \\frac{b^2}{a} \\le \\frac{a^2}{a} = a.$$ Тогда $(a', b)$ — пара с тем же $k$ и меньшей суммой $a' + b < a + b$. Это противоречит минимальности $a + b$.",
+        "Полученное противоречие показывает, что предположение неверно: $k$ — точный квадрат.",
+        "Главная идея («прыжки Виета»): возьмите минимальное решение, с помощью теоремы Виета постройте из него решение меньше и получите противоречие. Сегодня это классический олимпиадный приём."
+      ],
+      "en": [
+        "Let $k = \\frac{a^2+b^2}{ab+1}$; $k$ is a positive integer. Suppose, for contradiction, that $k$ is not a perfect square.",
+        "Among all pairs of positive integers $(a, b)$ with $a^2 + b^2 = k(ab+1)$, choose one with the smallest sum $a + b$. Without loss of generality $a \\ge b$.",
+        "View the equation as a quadratic in $a$: $$x^2 - kb\\,x + (b^2 - k) = 0.$$ Then $x = a$ is a root. By Vieta's formulas the other root is $$a' = kb - a = \\frac{b^2 - k}{a}.$$ The first expression shows that $a'$ is an integer, and the pair $(a', b)$ also satisfies $a'^2 + b^2 = k(a'b + 1)$.",
+        "If $a' < 0$, then $a'b + 1 \\le 0$, so the right-hand side $k(a'b+1) \\le 0$ while the left-hand side $a'^2 + b^2 > 0$ — a contradiction. If $a' = 0$, then $b^2 = k$, so $k$ is a perfect square, contradicting our assumption. Hence $a'$ is a positive integer.",
+        "On the other hand, $$a' = \\frac{b^2 - k}{a} < \\frac{b^2}{a} \\le \\frac{a^2}{a} = a.$$ So $(a', b)$ is a pair with the same $k$ and a smaller sum $a' + b < a + b$, contradicting the minimality of $a + b$.",
+        "This contradiction shows our assumption was false: $k$ is a perfect square.",
+        "Key idea («Vieta jumping»): take a minimal solution, use Vieta's formulas to build a smaller one, and reach a contradiction. It is now a classic olympiad technique."
+      ]
+    }
+  }
+]

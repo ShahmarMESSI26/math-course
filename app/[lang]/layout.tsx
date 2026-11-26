@@ -11,6 +11,7 @@ import { ThemeProvider } from '@/components/ThemeProvider';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { MobileCTA } from '@/components/MobileCTA';
+import { FloatingContact } from '@/components/finder/FloatingContact';
 import { JsonLd } from '@/components/JsonLd';
 
 const inter = Inter({ subsets: ['latin', 'latin-ext', 'cyrillic'], variable: '--font-inter', display: 'swap' });
@@ -57,6 +58,7 @@ export default async function LangLayout({ children, params }: Props) {
           <main className="pb-20 md:pb-0">{children}</main>
           <Footer lang={lang} d={d} />
           <MobileCTA d={d} />
+          <FloatingContact lang={lang} d={d} />
         </ThemeProvider>
         <JsonLd lang={lang} />
       </body>

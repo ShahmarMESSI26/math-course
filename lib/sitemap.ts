@@ -1,10 +1,21 @@
-import { olympiads } from './data';
+import { olympiads, problemPosts } from './data';
 import { locales, type Locale } from './locales';
 import { SITE_URL } from './site';
 
 /** Все страницы сайта (без языкового префикса). Добавляйте новые страницы сюда. */
 export function sitemapPaths(): string[] {
-  return ['', '/about', '/teachers', '/pricing', '/materials', '/contact', ...olympiads.map((o) => `/materials/${o.slug}`)];
+  return [
+    '',
+    '/about',
+    '/teachers',
+    '/pricing',
+    '/test',
+    '/materials',
+    '/problems',
+    '/contact',
+    ...olympiads.map((o) => `/materials/${o.slug}`),
+    ...problemPosts.map((p) => `/problems/${p.slug}`),
+  ];
 }
 
 export type SitemapEntry = {

@@ -12,6 +12,10 @@ import { OlympiadGrid } from '@/components/OlympiadGrid';
 import { TeacherCard } from '@/components/TeacherCard';
 import { PricingCards } from '@/components/PricingCards';
 import { CtaBanner } from '@/components/CtaBanner';
+import { QuizTeaser } from '@/components/quiz/QuizTeaser';
+import { Achievements } from '@/components/Achievements';
+import { FaqSection } from '@/components/FaqSection';
+import { ProgramFinder } from '@/components/finder/ProgramFinder';
 import { ArrowRightIcon, WhatsAppIcon } from '@/components/icons';
 
 type Props = { params: Promise<{ lang: string }> };
@@ -44,7 +48,10 @@ export default async function HomePage({ params }: Props) {
             <h1 className="mt-5 text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">{d.home.title}</h1>
             <p className="mt-5 max-w-xl text-lg text-slate-600 dark:text-slate-400">{d.home.subtitle}</p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link href={`/${lang}/contact/#trial`} className="btn-gold">
+              <Link href={`/${lang}/test/`} className="btn-gold">
+                {d.cta.test} →
+              </Link>
+              <Link href={`/${lang}/contact/#trial`} className="btn-primary">
                 {d.cta.trial}
               </Link>
               <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="btn-ghost">
@@ -78,10 +85,14 @@ export default async function HomePage({ params }: Props) {
         ))}
       </section>
 
+      <QuizTeaser lang={lang} d={d} />
+
       <Section title={d.home.olympiadsTitle} subtitle={d.home.olympiadsSubtitle} className="pt-4">
         <OlympiadGrid lang={lang} />
         <MoreLink href={`/${lang}/materials/`}>{d.cta.allMaterials}</MoreLink>
       </Section>
+
+      <Achievements lang={lang} d={d} />
 
       <Section
         title={d.home.teachersTitle}
@@ -100,6 +111,18 @@ export default async function HomePage({ params }: Props) {
         <PricingCards lang={lang} d={d} />
         <MoreLink href={`/${lang}/pricing/`}>{d.cta.allPricing}</MoreLink>
       </Section>
+
+      <Section
+        title={d.finder.title}
+        subtitle={d.finder.subtitle}
+        className="border-y border-slate-200 bg-white/60 dark:border-white/10 dark:bg-white/[0.02]"
+      >
+        <div className="max-w-xl">
+          <ProgramFinder lang={lang} d={d} />
+        </div>
+      </Section>
+
+      <FaqSection d={d} />
 
       <CtaBanner lang={lang} d={d} />
     </>

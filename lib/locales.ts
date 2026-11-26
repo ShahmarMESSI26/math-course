@@ -18,4 +18,11 @@ export function t(value: L10n, lang: Locale): string {
   return value[lang] || value.az;
 }
 
+/** Список абзацев на трёх языках (например, шаги решения). */
+export type L10nList = Record<Locale, string[]>;
+
+export function tl(value: L10nList, lang: Locale): string[] {
+  return value[lang]?.length ? value[lang] : value.az;
+}
+
 export const ogLocale: Record<Locale, string> = { az: 'az_AZ', ru: 'ru_RU', en: 'en_US' };

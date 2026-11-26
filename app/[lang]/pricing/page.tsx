@@ -6,6 +6,8 @@ import { pageMetadata } from '@/lib/seo';
 import { PageHeader, Section } from '@/components/Section';
 import { PricingCards } from '@/components/PricingCards';
 import { CtaBanner } from '@/components/CtaBanner';
+import { FaqSection } from '@/components/FaqSection';
+import { ProgramFinder } from '@/components/finder/ProgramFinder';
 
 type Props = { params: Promise<{ lang: string }> };
 
@@ -25,8 +27,12 @@ export default async function PricingPage({ params }: Props) {
       <PageHeader title={p.title} subtitle={p.subtitle} />
 
       <Section>
+        <PricingCards lang={lang} d={d} />
+      </Section>
+
+      <Section title={d.finder.title} subtitle={d.finder.subtitle} className="pt-0">
         <div className="grid gap-10 lg:grid-cols-[1fr_320px]">
-          <PricingCards lang={lang} d={d} />
+          <ProgramFinder lang={lang} d={d} />
           <aside className="card h-fit border-gold-500/60 bg-gold-500/5 p-6 dark:bg-gold-500/5">
             <span className="font-display text-4xl font-extrabold text-gold-600 dark:text-gold-400">2×</span>
             <h2 className="mt-2 text-xl font-bold">{p.trialTitle}</h2>
@@ -61,6 +67,8 @@ export default async function PricingPage({ params }: Props) {
           ))}
         </ol>
       </Section>
+
+      <FaqSection d={d} />
 
       <CtaBanner lang={lang} d={d} />
     </>

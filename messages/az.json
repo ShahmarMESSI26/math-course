@@ -9,6 +9,7 @@
     "teachers": "Müəllimlər",
     "pricing": "Qiymətlər",
     "materials": "Materiallar",
+    "problems": "Məsələ həlləri",
     "contact": "Əlaqə",
     "menu": "Menyunu aç",
     "close": "Menyunu bağla",
@@ -19,13 +20,16 @@
     "trial": "Sınaq dərsinə yazıl",
     "whatsapp": "WhatsApp",
     "call": "Zəng et",
+    "test": "Pulsuz səviyyə testi",
     "allTeachers": "Bütün müəllimlər",
     "allPricing": "Qiymətlər və format",
     "allMaterials": "Materiallara bax"
   },
   "common": {
     "soon": "tezliklə",
-    "perMonth": "AZN / ay"
+    "perMonth": "AZN / ay",
+    "priceOnRequest": "Qiymət sorğu ilə",
+    "langName": "Azərbaycan dili"
   },
   "home": {
     "badge": "Bakı · Zaqatala (tezliklə) · Onlayn",
@@ -75,7 +79,16 @@
   "pricing": {
     "title": "Qiymətlər və format",
     "subtitle": "Həftədə bir və ya iki dərs seçin. İlk iki dərs sınaq dərsidir.",
-    "featured": "İntensiv",
+    "featured": "Populyar seçim",
+    "formats": {
+      "baku": { "title": "Bakıda əyani qruplar", "text": "Mərkəzimizdə kiçik qruplarda canlı dərslər. Şagirdlər səviyyəyə görə qruplara bölünür." },
+      "online": { "title": "Fərdi / Onlayn", "text": "Dünyanın istənilən ölkəsindən olan şagirdlər üçün — Zoom və ya Google Meet vasitəsilə canlı dərslər." }
+    },
+    "choosePlan": "WhatsApp-da bu tarifə yazıl",
+    "msgPlan": "Salam! \"{plan}\" tarifi ilə maraqlanıram.",
+    "msgFormat": "Format",
+    "msgPrice": "Qiymət",
+    "msgLang": "Dil",
     "plans": {
       "one": {
         "name": "Həftədə 1 dərs",
@@ -86,6 +99,16 @@
         "name": "Həftədə 2 dərs",
         "desc": "Olimpiadaya intensiv hazırlıq",
         "features": ["Ayda 8 dərs", "Aylıq sınaq imtahanı", "Səviyyəyə görə alt qrup", "Ev tapşırıqları və materiallar"]
+      },
+      "online": {
+        "name": "Onlayn qrup",
+        "desc": "Harada yaşamağınızdan asılı olmayaraq canlı qrup dərsləri",
+        "features": ["Zoom / Google Meet ilə canlı dərslər", "Aylıq sınaq imtahanı", "Səviyyəyə görə qrup", "Ev tapşırıqları və materiallar"]
+      },
+      "individual": {
+        "name": "Fərdi dərslər",
+        "desc": "Müəllimlə 1-ə-1, şagirdə uyğun proqram",
+        "features": ["Fərdi tədris planı", "Çevik qrafik", "Bakıda əyani və ya onlayn", "Olimpiada və ya məktəb proqramı"]
       }
     },
     "trialTitle": "İlk 2 dərs — sınaq",
@@ -150,7 +173,8 @@
       "msgName": "Ad",
       "msgPhone": "Telefon",
       "msgGrade": "Sinif",
-      "msgBranch": "Filial"
+      "msgBranch": "Filial",
+      "msgLang": "Dil"
     }
   },
   "social": {
@@ -162,6 +186,169 @@
     "contactTitle": "Əlaqə",
     "socialsTitle": "Sosial şəbəkələr",
     "rights": "Bütün hüquqlar qorunur."
+  },
+  "quiz": {
+    "title": "Pulsuz səviyyə testi",
+    "subtitle": "5 məntiq və riyaziyyat məsələsi, 10 dəqiqə. Sonda uşağınıza uyğun Shahmath qrupunu tövsiyə edəcəyik.",
+    "metaDescription": "Onlayn riyaziyyat səviyyə testi: 5 məsələ, 10 dəqiqə. Şagirdin baza və ya olimpiada qrupuna uyğun olduğunu öyrənin və pulsuz sınaq dərsinə yazılın.",
+    "facts": ["5 məsələ", "10 dəqiqə", "Dərhal nəticə", "Pulsuz"],
+    "introTitle": "Uşağınız hansı səviyyədədir?",
+    "introText": "Test məntiq, ədədlər, həndəsə və ədədlər nəzəriyyəsi üzrə məsələlərdən ibarətdir. Məsələlər getdikcə çətinləşir: çətin məsələlər daha çox bal gətirir.",
+    "note": "Kalkulyatordan istifadə etməyin — biz cavabı yox, düşüncə tərzini yoxlayırıq.",
+    "start": "Testə başla",
+    "question": "Sual {n} / {total}",
+    "points": "{n} bal",
+    "timeLeft": "Qalan vaxt",
+    "next": "Növbəti",
+    "skip": "Keç",
+    "back": "Geri",
+    "finish": "Testi bitir",
+    "timeUp": "Vaxt bitdi — cavab verdiyiniz suallar qiymətləndirildi.",
+    "resultTitle": "Nəticəniz",
+    "correct": "Düzgün cavablar: {correct} / {total}",
+    "time": "Vaxt: {time}",
+    "recommended": "Tövsiyə olunan qrup",
+    "levels": {
+      "foundation": {
+        "name": "Baza / Möhkəmləndirici qrup",
+        "text": "Məktəb riyaziyyatının əsaslarını möhkəmləndirəcək, məntiqi düşüncəni inkişaf etdirəcək və olimpiada məsələlərinə addım-addım keçəcəyik. Aylıq sınaqda irəliləyən şagird güclü qrupa keçir."
+      },
+      "olympiad": {
+        "name": "Güclü / Olimpiada qrupu",
+        "text": "Əla nəticə! Şagird olimpiada tipli məsələlərə hazırdır. Güclü qrupda IMO, JBMO, IZhO və respublika olimpiadalarının məsələləri üzərində işləyəcəyik."
+      }
+    },
+    "review": "Cavabları yoxla",
+    "correctAnswer": "düzgün cavab",
+    "retry": "Testi yenidən keç",
+    "formTitle": "Pulsuz sınaq dərsinə yazılın",
+    "formText": "Şagirdin adını və sinfini qeyd edin — WhatsApp-da test nəticələri ilə hazır mesaj açılacaq, sadəcə göndərin.",
+    "name": "Şagirdin adı",
+    "namePh": "Məsələn, Murad",
+    "grade": "Sinif",
+    "gradePh": "Seçin",
+    "submit": "WhatsApp-da pulsuz sınaq dərsinə yazıl",
+    "errRequired": "Zəhmət olmasa, ad və sinfi qeyd edin.",
+    "success": "WhatsApp açıldı. Mesajı göndərin — tezliklə sizinlə əlaqə saxlayacağıq.",
+    "fallback": "WhatsApp açılmadısa, buraya klikləyin",
+    "msgGreeting": "Salam! Shahmath saytında səviyyə testini keçdik və pulsuz sınaq dərsinə yazılmaq istəyirik.",
+    "msgName": "Şagird",
+    "msgGrade": "Sinif",
+    "msgScore": "Bal",
+    "msgCorrect": "Düzgün cavablar",
+    "msgTime": "Vaxt",
+    "msgLevel": "Tövsiyə olunan qrup",
+    "msgLang": "Dil",
+    "teaserBadge": "10 dəqiqəlik test",
+    "teaserTitle": "Uşağınızın səviyyəsini 10 dəqiqəyə öyrənin",
+    "teaserText": "5 məsələdən ibarət pulsuz test şagirdin baza və ya olimpiada qrupuna uyğun olduğunu göstərəcək. Nəticə dərhal ekranda görünür."
+  },
+  "achievements": {
+    "title": "Nailiyyətlərimiz",
+    "subtitle": "Şagirdlərimizin beynəlxalq və respublika olimpiadalarında qazandığı nəticələr.",
+    "awardsTitle": "Medallar və mükafatlar",
+    "casesTitle": "Şagirdlərin inkişaf hekayələri",
+    "before": "Əvvəl",
+    "after": "Sonra",
+    "grade": "Sinif",
+    "statMedals": "medal",
+    "statGold": "qızıl medal",
+    "statOlympiads": "olimpiada",
+    "statWorld": "FISO dünya reytinqində",
+    "medals": {
+      "trophy": "Kubok",
+      "finalist": "Final mərhələsi",
+      "gold": "Qızıl medal",
+      "silver": "Gümüş medal",
+      "bronze": "Bürünc medal",
+      "honorable": "Fəxri fərman",
+      "diploma": "Diplom"
+    },
+    "levels": {
+      "international": "Beynəlxalq",
+      "national": "Respublika",
+      "rating": "Dünya reytinqi"
+    }
+  },
+  "faq": {
+    "title": "Valideynlərin tez-tez verdiyi suallar",
+    "subtitle": "Cavabını tapmadınız? WhatsApp-a yazın — məmnuniyyətlə kömək edərik.",
+    "items": [
+      { "q": "Hansı yaşda və sinifdə olan şagirdləri qəbul edirsiniz?", "a": "4-cü sinifdən 11-ci sinfə qədər şagirdlərlə işləyirik. Qrup yaşa görə yox, səviyyəyə görə seçilir." },
+      { "q": "Uşağım hələ olimpiada səviyyəsində deyil. Ona uyğun qrup varmı?", "a": "Bəli. Baza / möhkəmləndirici qrupda məktəb riyaziyyatının əsasları və məntiq üzərində işləyirik. Şagird irəlilədikcə daha güclü qrupa keçir." },
+      { "q": "Sınaq dərsləri necə keçir?", "a": "Qeydiyyatdan sonra ilk iki dərs sınaq dərsidir: şagird qrupla və müəllimlə tanış olur, müəllim isə onun səviyyəsini qiymətləndirir. Bundan əvvəl saytdakı pulsuz səviyyə testini keçə bilərsiniz." },
+      { "q": "Aylıq sınaq imtahanı nədir?", "a": "Hər ay olimpiada formatında imtahan keçirilir. Nəticələrə görə şagirdlər səviyyəyə uyğun alt qruplara bölünür — irəliləyən şagird daha güclü qrupa keçir." },
+      { "q": "Başqa ölkədən onlayn oxumaq olarmı?", "a": "Bəli. Onlayn dərslər Zoom və ya Google Meet vasitəsilə canlı keçirilir, ona görə də dünyanın istənilən ölkəsindən qoşulmaq olar. Fərdi dərslər də mümkündür." },
+      { "q": "Dərslərin qiyməti nə qədərdir?", "a": "Bakıda əyani qrup: həftədə 1 dərs — ayda 250 AZN, həftədə 2 dərs — ayda 500 AZN. Onlayn və fərdi dərslərin qiymətini WhatsApp-da dəqiqləşdirə bilərsiniz." },
+      { "q": "Hansı olimpiadalara hazırlaşırsınız?", "a": "IMO, JBMO, RFO, BOM, IZhO, EGMO, həmçinin respublika olimpiadalarına. Hər olimpiada üçün keçmiş illərin məsələləri və həlləri «Materiallar» bölməsindədir." }
+    ]
+  },
+  "finder": {
+    "title": "Proqram seçici",
+    "subtitle": "3 sual cavablandırın — uyğun qrupu, qiyməti və yazılış düyməsini dərhal görəcəksiniz.",
+    "widgetText": "3 sual — uyğun qrup və qiymət",
+    "stepGrade": "Sinif",
+    "stepGoal": "Məqsəd",
+    "stepFormat": "Format",
+    "qGrade": "Uşağınız neçənci sinifdə oxuyur?",
+    "qGoal": "Əsas məqsəd nədir?",
+    "qFormat": "Hansı format daha rahatdır?",
+    "goals": {
+      "school": { "name": "Məktəb proqramı", "hint": "Riyaziyyatı möhkəmləndirmək, qiymətləri yaxşılaşdırmaq" },
+      "olympiad": { "name": "Olimpiadalar", "hint": "Respublika və beynəlxalq olimpiadalara hazırlıq" }
+    },
+    "formats": {
+      "baku": { "name": "Bakıda əyani qrup", "hint": "Mərkəzimizdə kiçik qruplarda" },
+      "online": { "name": "Onlayn qrup", "hint": "İstənilən ölkədən, canlı dərslər" },
+      "individual": { "name": "Fərdi dərslər", "hint": "Müəllimlə 1-ə-1, əyani və ya onlayn" }
+    },
+    "programs": {
+      "foundation": { "name": "Baza / Möhkəmləndirici qrup", "text": "Məktəb riyaziyyatının əsasları, məntiq və problem həlli bacarıqları. Aylıq sınaqla irəliləyiş ölçülür." },
+      "olympiad": { "name": "Güclü / Olimpiada qrupu", "text": "Olimpiada mövzuları: cəbr, həndəsə, kombinatorika, ədədlər nəzəriyyəsi. Keçmiş illərin olimpiada məsələləri üzərində iş." }
+    },
+    "resultTitle": "Sizə uyğun proqram",
+    "planLabel": "Tarif",
+    "priceLabel": "Qiymət",
+    "summary": "Sinif: {grade} · {goal} · {format}",
+    "book": "WhatsApp-da yazıl",
+    "testFirst": "Əvvəlcə pulsuz testi keç",
+    "back": "Geri",
+    "reset": "Yenidən başla",
+    "msgGreeting": "Salam! Saytda proqram seçicidən istifadə etdim və sınaq dərsinə yazılmaq istəyirəm.",
+    "msgGrade": "Sinif",
+    "msgGoal": "Məqsəd",
+    "msgFormat": "Format",
+    "msgProgram": "Proqram",
+    "msgPlan": "Tarif",
+    "msgLang": "Dil"
+  },
+  "problems": {
+    "title": "Olimpiada məsələlərinin həlləri",
+    "subtitle": "IMO, JBMO, IZhO, RFO və digər olimpiadaların məsələləri — addım-addım izahlı həllərlə.",
+    "metaTitle": "Olimpiada məsələlərinin həlləri — IMO, JBMO, IZhO, RFO",
+    "metaDescription": "Riyaziyyat olimpiadası məsələlərinin addım-addım həlləri: cəbr, həndəsə, kombinatorika, ədədlər nəzəriyyəsi. Shahmath müəllimlərindən izahlar.",
+    "classic": "Klassik məsələ",
+    "read": "Həllə bax",
+    "statement": "Məsələnin şərti",
+    "tryFirst": "Həllə baxmazdan əvvəl məsələni özünüz həll etməyə çalışın — 15–20 dəqiqə düşünmək çox faydalıdır.",
+    "solution": "Həll",
+    "showSolution": "Göstər",
+    "hideSolution": "Gizlət",
+    "answer": "Cavab",
+    "moreFrom": "Bu olimpiadanın digər məsələləri:",
+    "related": "Digər həllər",
+    "difficulty": { "1": "Asan", "2": "Orta", "3": "Çətin" },
+    "ctaTitle": "Belə məsələləri həll etməyi öyrənmək istəyirsən?",
+    "ctaText": "Pulsuz səviyyə testindən keç və Shahmath-ın güclü qrupuna yazıl.",
+    "ctaWhatsapp": "WhatsApp-da sual ver",
+    "msgGreeting": "Salam! Saytda olimpiada məsələsinin həllini oxudum və güclü qrupa yazılmaq istəyirəm.",
+    "msgProblem": "Məsələ",
+    "msgLang": "Dil"
+  },
+  "floating": {
+    "finder": "Proqram seç",
+    "whatsapp": "WhatsApp-a yaz",
+    "close": "Bağla"
   },
   "notFound": {
     "title": "Səhifə tapılmadı",

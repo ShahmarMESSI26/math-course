@@ -9,6 +9,7 @@
     "teachers": "Teachers",
     "pricing": "Pricing",
     "materials": "Materials",
+    "problems": "Problem solutions",
     "contact": "Contact",
     "menu": "Open menu",
     "close": "Close menu",
@@ -19,13 +20,16 @@
     "trial": "Book a trial lesson",
     "whatsapp": "WhatsApp",
     "call": "Call",
+    "test": "Free level test",
     "allTeachers": "All teachers",
     "allPricing": "Pricing & format",
     "allMaterials": "Browse materials"
   },
   "common": {
     "soon": "soon",
-    "perMonth": "AZN / month"
+    "perMonth": "AZN / month",
+    "priceOnRequest": "Price on request",
+    "langName": "English"
   },
   "home": {
     "badge": "Baku · Zaqatala (soon) · Online",
@@ -75,7 +79,16 @@
   "pricing": {
     "title": "Pricing & format",
     "subtitle": "Choose one or two lessons per week. The first two lessons are trial lessons.",
-    "featured": "Intensive",
+    "featured": "Popular choice",
+    "formats": {
+      "baku": { "title": "In-person groups in Baku", "text": "Live lessons in small groups at our center. Students are placed in groups by level." },
+      "online": { "title": "Individual / Online", "text": "For students from any country — live lessons on Zoom or Google Meet." }
+    },
+    "choosePlan": "Sign up on WhatsApp",
+    "msgPlan": "Hello! I'm interested in the \"{plan}\" plan.",
+    "msgFormat": "Format",
+    "msgPrice": "Price",
+    "msgLang": "Language",
     "plans": {
       "one": {
         "name": "1 lesson per week",
@@ -86,6 +99,16 @@
         "name": "2 lessons per week",
         "desc": "Intensive olympiad preparation",
         "features": ["8 lessons per month", "Monthly mock exam", "Level-based subgroup", "Homework and materials"]
+      },
+      "online": {
+        "name": "Online group",
+        "desc": "Live group lessons wherever you are",
+        "features": ["Live lessons on Zoom / Google Meet", "Monthly mock exam", "Level-based group", "Homework and materials"]
+      },
+      "individual": {
+        "name": "Individual lessons",
+        "desc": "One-to-one with a teacher, a programme built around the student",
+        "features": ["Personal study plan", "Flexible schedule", "In person in Baku or online", "Olympiad or school curriculum"]
       }
     },
     "trialTitle": "The first 2 lessons are trial lessons",
@@ -150,7 +173,8 @@
       "msgName": "Name",
       "msgPhone": "Phone",
       "msgGrade": "Grade",
-      "msgBranch": "Branch"
+      "msgBranch": "Branch",
+      "msgLang": "Language"
     }
   },
   "social": {
@@ -162,6 +186,169 @@
     "contactTitle": "Contact",
     "socialsTitle": "Social media",
     "rights": "All rights reserved."
+  },
+  "quiz": {
+    "title": "Free level test",
+    "subtitle": "5 logic and maths problems, 10 minutes. At the end we'll recommend the right Shahmath group for your child.",
+    "metaDescription": "Online maths level test: 5 problems, 10 minutes. Find out whether a student fits a foundation or an olympiad group, and book a free trial lesson.",
+    "facts": ["5 problems", "10 minutes", "Instant result", "Free"],
+    "introTitle": "What level is your child at?",
+    "introText": "The test covers logic, numbers, geometry and number theory. Problems get harder as you go: harder problems are worth more points.",
+    "note": "Please don't use a calculator — we're checking the way of thinking, not just the answer.",
+    "start": "Start the test",
+    "question": "Question {n} of {total}",
+    "points": "points: {n}",
+    "timeLeft": "Time left",
+    "next": "Next",
+    "skip": "Skip",
+    "back": "Back",
+    "finish": "Finish the test",
+    "timeUp": "Time is up — the questions you answered have been scored.",
+    "resultTitle": "Your result",
+    "correct": "Correct answers: {correct} of {total}",
+    "time": "Time: {time}",
+    "recommended": "Recommended group",
+    "levels": {
+      "foundation": {
+        "name": "Foundation / Strengthening group",
+        "text": "We'll strengthen the basics of school maths, develop logical thinking and move step by step towards olympiad problems. Students who improve on the monthly mock exam move up to the strong group."
+      },
+      "olympiad": {
+        "name": "Strong / Olympiad group",
+        "text": "Excellent result! The student is ready for olympiad-level problems. In the strong group we work on problems from the IMO, JBMO, IZhO and national olympiads."
+      }
+    },
+    "review": "Check the answers",
+    "correctAnswer": "correct answer",
+    "retry": "Take the test again",
+    "formTitle": "Book a free trial lesson",
+    "formText": "Enter the student's name and grade — WhatsApp will open with a ready message containing the test results; just send it.",
+    "name": "Student's name",
+    "namePh": "e.g. Murad",
+    "grade": "Grade",
+    "gradePh": "Select",
+    "submit": "Book a free trial lesson on WhatsApp",
+    "errRequired": "Please enter the name and grade.",
+    "success": "WhatsApp has opened. Send the message — we'll get back to you soon.",
+    "fallback": "If WhatsApp didn't open, click here",
+    "msgGreeting": "Hello! We took the level test on the Shahmath website and would like to book a free trial lesson.",
+    "msgName": "Student",
+    "msgGrade": "Grade",
+    "msgScore": "Score",
+    "msgCorrect": "Correct answers",
+    "msgTime": "Time",
+    "msgLevel": "Recommended group",
+    "msgLang": "Language",
+    "teaserBadge": "10-minute test",
+    "teaserTitle": "Find out your child's level in 10 minutes",
+    "teaserText": "A free 5-problem test shows whether a student fits a foundation or an olympiad group. The result appears on screen right away."
+  },
+  "achievements": {
+    "title": "Our achievements",
+    "subtitle": "Results of our students at international and national olympiads.",
+    "awardsTitle": "Medals and awards",
+    "casesTitle": "Student growth stories",
+    "before": "Before",
+    "after": "After",
+    "grade": "Grade",
+    "statMedals": "medals",
+    "statGold": "gold medals",
+    "statOlympiads": "olympiads",
+    "statWorld": "worldwide at FISO",
+    "medals": {
+      "trophy": "Trophy",
+      "finalist": "Finalist",
+      "gold": "Gold medal",
+      "silver": "Silver medal",
+      "bronze": "Bronze medal",
+      "honorable": "Honourable mention",
+      "diploma": "Diploma"
+    },
+    "levels": {
+      "international": "International",
+      "national": "National",
+      "rating": "World ranking"
+    }
+  },
+  "faq": {
+    "title": "Questions parents often ask",
+    "subtitle": "Didn't find an answer? Message us on WhatsApp — we're happy to help.",
+    "items": [
+      { "q": "What ages and grades do you accept?", "a": "We work with students from grade 4 to grade 11. Groups are formed by level, not by age." },
+      { "q": "My child isn't at olympiad level yet. Is there a suitable group?", "a": "Yes. In the foundation / strengthening group we work on the basics of school maths and logic. As the student improves, they move to a stronger group." },
+      { "q": "How do the trial lessons work?", "a": "After signing up, the first two lessons are trial lessons: the student meets the group and the teacher, and the teacher assesses their level. Before that, you can take the free level test on our website." },
+      { "q": "What is the monthly mock exam?", "a": "Every month there is an exam in olympiad format. Based on the results, students are placed in level-based subgroups — a student who improves moves to a stronger group." },
+      { "q": "Can my child study online from another country?", "a": "Yes. Online lessons are live on Zoom or Google Meet, so students can join from any country. Individual lessons are also available." },
+      { "q": "How much do lessons cost?", "a": "In-person group in Baku: 1 lesson per week — 250 AZN per month, 2 lessons per week — 500 AZN per month. Ask us on WhatsApp for online and individual lesson prices." },
+      { "q": "Which olympiads do you prepare for?", "a": "The IMO, JBMO, RFO, BOM, IZhO, EGMO and national olympiads. Past problems and solutions for each olympiad are in the «Materials» section." }
+    ]
+  },
+  "finder": {
+    "title": "Programme finder",
+    "subtitle": "Answer 3 questions and instantly see the right group, the price and a sign-up button.",
+    "widgetText": "3 questions — the right group and price",
+    "stepGrade": "Grade",
+    "stepGoal": "Goal",
+    "stepFormat": "Format",
+    "qGrade": "What grade is your child in?",
+    "qGoal": "What is the main goal?",
+    "qFormat": "Which format suits you best?",
+    "goals": {
+      "school": { "name": "School curriculum", "hint": "Strengthen maths, improve grades" },
+      "olympiad": { "name": "Olympiads", "hint": "Preparation for national and international olympiads" }
+    },
+    "formats": {
+      "baku": { "name": "In-person group in Baku", "hint": "Small groups at our center" },
+      "online": { "name": "Online group", "hint": "From any country, live lessons" },
+      "individual": { "name": "Individual lessons", "hint": "One-to-one, in person or online" }
+    },
+    "programs": {
+      "foundation": { "name": "Foundation / Strengthening group", "text": "School maths fundamentals, logic and problem-solving skills. Progress is measured by the monthly mock exam." },
+      "olympiad": { "name": "Strong / Olympiad group", "text": "Olympiad topics: algebra, geometry, combinatorics, number theory. Work on past olympiad problems." }
+    },
+    "resultTitle": "Your recommended programme",
+    "planLabel": "Plan",
+    "priceLabel": "Price",
+    "summary": "Grade {grade} · {goal} · {format}",
+    "book": "Sign up on WhatsApp",
+    "testFirst": "Take the free test first",
+    "back": "Back",
+    "reset": "Start over",
+    "msgGreeting": "Hello! We used the programme finder on your website and would like to book a trial lesson.",
+    "msgGrade": "Grade",
+    "msgGoal": "Goal",
+    "msgFormat": "Format",
+    "msgProgram": "Programme",
+    "msgPlan": "Plan",
+    "msgLang": "Language"
+  },
+  "problems": {
+    "title": "Olympiad problem solutions",
+    "subtitle": "Problems from the IMO, JBMO, IZhO, RFO and other olympiads — with detailed step-by-step solutions.",
+    "metaTitle": "Math olympiad problem solutions — IMO, JBMO, IZhO, RFO",
+    "metaDescription": "Step-by-step solutions to math olympiad problems: algebra, geometry, combinatorics, number theory. Explained by Shahmath teachers.",
+    "classic": "Classic problem",
+    "read": "See the solution",
+    "statement": "Problem",
+    "tryFirst": "Before looking at the solution, try to solve the problem yourself — 15–20 minutes of thinking is very valuable.",
+    "solution": "Solution",
+    "showSolution": "Show",
+    "hideSolution": "Hide",
+    "answer": "Answer",
+    "moreFrom": "More problems from this olympiad:",
+    "related": "More solutions",
+    "difficulty": { "1": "Easy", "2": "Medium", "3": "Hard" },
+    "ctaTitle": "Want to learn to solve problems like this?",
+    "ctaText": "Take the free test and join Shahmath's strong group.",
+    "ctaWhatsapp": "Ask on WhatsApp",
+    "msgGreeting": "Hello! We read an olympiad problem solution on your website and would like to join the strong group.",
+    "msgProblem": "Problem",
+    "msgLang": "Language"
+  },
+  "floating": {
+    "finder": "Find a programme",
+    "whatsapp": "Message us on WhatsApp",
+    "close": "Close"
   },
   "notFound": {
     "title": "Page not found",

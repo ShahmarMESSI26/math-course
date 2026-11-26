@@ -30,14 +30,27 @@ export const NAV = [
   { href: '/teachers', key: 'teachers' },
   { href: '/pricing', key: 'pricing' },
   { href: '/materials', key: 'materials' },
+  { href: '/problems', key: 'problems' },
   { href: '/contact', key: 'contact' },
 ] as const;
 
-/** Стоимость в AZN за месяц. Меняйте здесь. */
+/** Классы, которые можно выбрать в формах. */
+export const GRADES = ['4', '5', '6', '7', '8', '9', '10', '11'] as const;
+
+/**
+ * Тарифы. Стоимость в AZN за месяц; null — «цена по запросу».
+ * format: 'baku' — очные группы в Баку, 'online' — онлайн / индивидуально (любая страна).
+ * Названия и пункты тарифов — в messages/*.json → pricing.plans.<key>.
+ */
 export const PLANS = [
-  { key: 'one', price: 250, featured: false },
-  { key: 'two', price: 500, featured: true },
-] as const;
+  { key: 'one', format: 'baku', price: 250, featured: false },
+  { key: 'two', format: 'baku', price: 500, featured: true },
+  { key: 'online', format: 'online', price: null, featured: false },
+  { key: 'individual', format: 'online', price: null, featured: false },
+] as const satisfies readonly { key: string; format: 'baku' | 'online'; price: number | null; featured: boolean }[];
+
+export type PlanKey = (typeof PLANS)[number]['key'];
+export const PLAN_FORMATS = ['baku', 'online'] as const;
 
 /** Карты (Google Maps embed, ключ не нужен). Замените запрос на точный адрес. */
 export const MAPS = {

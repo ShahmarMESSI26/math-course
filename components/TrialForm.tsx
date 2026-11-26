@@ -2,10 +2,10 @@
 
 import { useState, type FormEvent } from 'react';
 import type { Dict } from '@/lib/i18n';
-import { whatsappLink } from '@/lib/site';
+import { sendLead } from '@/lib/leads';
+import { GRADES } from '@/lib/site';
 import { WhatsAppIcon } from './icons';
 
-const GRADES = ['4', '5', '6', '7', '8', '9', '10', '11'];
 const BRANCHES = ['baku', 'zaqatala', 'online'] as const;
 type Branch = (typeof BRANCHES)[number];
 
@@ -31,17 +31,19 @@ export function TrialForm({ d }: { d: Dict }) {
     }
     setError('');
 
-    const message = [
-      f.msgGreeting,
-      `${f.msgName}: ${name.trim()}`,
-      `${f.msgPhone}: ${phone.trim()}`,
-      `${f.msgGrade}: ${grade}`,
-      `${f.msgBranch}: ${f.branches[branch]}`,
-    ].join('\n');
-
-    const url = whatsappLink(message);
-    setSentUrl(url);
-    window.open(url, '_blank', 'noopener,noreferrer');
+    setSentUrl(
+      sendLead({
+        source: 'trial',
+        greeting: f.msgGreeting,
+        fields: [
+          [f.msgName, name.trim()],
+          [f.msgPhone, phone.trim()],
+          [f.msgGrade, grade],
+          [f.msgBranch, f.branches[branch]],
+          [f.msgLang, d.common.langName],
+        ],
+      }),
+    );
   }
 
   return (
